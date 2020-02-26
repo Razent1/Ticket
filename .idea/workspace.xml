@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e02ef90a-164d-4dd9-b00d-13ac9a78ac0c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Login.js" afterDir="false" />
-    </list>
+    <list default="true" id="e02ef90a-164d-4dd9-b00d-13ac9a78ac0c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582631860910</updated>
-      <workItem from="1582631865601" duration="31545000" />
+      <workItem from="1582631865601" duration="31823000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <created>1582715480540</created>
@@ -118,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582720588403</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="save">
+      <created>1582721289113</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582721289114</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,15 +170,19 @@
     <option name="LAST_COMMIT_MESSAGE" value="save" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="299" y="105" width="941" height="795" key="CommitChangelistDialog2" timestamp="1582720521344">
+    <state x="281" y="96" key="#Deployment" timestamp="1582721212952">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="299" y="105" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1582720521344" />
+    <state x="281" y="96" key="#Deployment/0.0.1440.900@0.0.1440.900" timestamp="1582721212952" />
+    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2" timestamp="1582721287813">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1582721287813" />
     <state x="314" y="76" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1582719817002" />
-    <state x="144" y="80" key="DiffContextDialog" timestamp="1582719928834">
+    <state x="144" y="80" key="DiffContextDialog" timestamp="1582721093909">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="144" y="80" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1582719928833" />
+    <state x="144" y="80" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1582721093909" />
     <state x="529" y="373" key="Github.CreateGistDialog" timestamp="1582720660436">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
