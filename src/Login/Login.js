@@ -11,7 +11,7 @@ class Login extends React.Component {
         this.state = {
             checkLogin: false,
             checkEmail: false,
-            checkPassword: false,
+            checkPassword: true,
             inputEmail: '',
             inputPassword: ''
         };
@@ -36,20 +36,20 @@ class Login extends React.Component {
     }
 
     emailValidation = (email) => {
-        if (email.includes('@') && email.includes('.')) {
-            //this.setState({checkEmail: !this.state.checkEmail});
-            let indexOfDote = email.length - email.lastIndexOf('.');
-            let indexOfAt = email.lastIndexOf('.') - email.lastIndexOf('@');
-            if (indexOfDote >= 1 && indexOfAt >= 1) {
-                this.setState({checkEmail: true});
-            }
-        } else {
+        let indexOfDote = email.length - 1 - email.lastIndexOf('.') - 1;
+        let indexOfAt = email.lastIndexOf('.') - 1 - email.lastIndexOf('@');
+        if (email.includes('@') && email.includes('.') && indexOfDote >= 2 && indexOfAt >= 1) {
+            console.log(indexOfAt);
+            this.setState({checkEmail: true});
+        }  else {
             this.setState({checkEmail: false});
         }
     }
 
     setLogin = () => {
-        this.setState({checkLogin: true});
+        if(this.state.checkEmail === true && this.state.checkPassword === true) {
+            this.setState({checkLogin: true});
+        }
     }
 
     render() {
