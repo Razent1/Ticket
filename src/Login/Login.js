@@ -1,17 +1,15 @@
 import React from "react";
 import AllEvents from "../AllEvents";
-import {API_KEY} from "../tools/Сonstants";
-
+import InfoBlock from "../InformationBlock/InfoBlock";
 
 class Login extends React.Component {
-
 
     constructor(props) {
         super(props);
         this.state = {
             checkLogin: false,
             checkEmail: false,
-            checkPassword: true,
+            checkPassword: false,
             inputEmail: '',
             inputPassword: ''
         };
@@ -41,61 +39,68 @@ class Login extends React.Component {
         if (email.includes('@') && email.includes('.') && indexOfDote >= 2 && indexOfAt >= 1) {
             console.log(indexOfAt);
             this.setState({checkEmail: true});
-        }  else {
+        } else {
             this.setState({checkEmail: false});
         }
     }
 
     setLogin = () => {
-        if(this.state.checkEmail === true && this.state.checkPassword === true) {
+        if (this.state.checkEmail === true && this.state.checkPassword === true) {
             this.setState({checkLogin: true});
         }
+    }
+    renderFalse = () => {
+        return (
+            <div className="container">
+                <form onSubmit={this.getAdminInformation}>
+                    <div className="form-group row justify-content-center">
+                        <div className="col-sm-3">
+
+                            <input type="email" className="form-control"
+                                   id="inputEmail" placeholder="Email"
+                                   value={this.state.inputEmail}
+                                   onChange={this.handleChangeEmail}
+                                   name="inputEmail"/>
+                        </div>
+                    </div>
+                    <div className="form-group row justify-content-center">
+
+                        <div className="col-sm-3">
+                            <input type="password" className="form-control" id="inputPassword"
+                                   placeholder="Password"
+                                   value={this.state.inputPassword}
+                                   onChange={this.handleChangePassword}
+                                   name="inputPassword"/>
+                        </div>
+
+                    </div>
+                </form>
+                <div className="btn">
+                    <button onClick={this.setLogin} type="button" className="btn btn-primary" id="sbmtbtn">Login
+                    </button>
+                </div>
+                <div className="link">
+                </div>
+            </div>
+        );
+    }
+    renderTrue = () => {
+        return (
+            <div>
+                <AllEvents/>
+                <InfoBlock/>
+            </div>
+        );
     }
 
     render() {
         console.log(this.state.inputEmail);
         console.log(this.state.checkEmail);
-        if (this.state.checkLogin === false) {
-            return (
-                <div className="container">
-                    <form onSubmit={this.getAdminInformation}>
-                        <div className="form-group row justify-content-center">
-                            <div className="col-sm-3">
-
-                                <input type="email" className="form-control"
-                                       id="inputEmail" placeholder="Email"
-                                       value={this.state.inputEmail}
-                                       onChange={this.handleChangeEmail}
-                                       name="inputEmail"/>
-                            </div>
-                        </div>
-                        <div className="form-group row justify-content-center">
-
-                            <div className="col-sm-3">
-                                <input type="password" className="form-control" id="inputPassword"
-                                       placeholder="Password"
-                                       value={this.state.inputPassword}
-                                       onChange={this.handleChangePassword}
-                                       name="inputPassword"/>
-                            </div>
-
-                        </div>
-                    </form>
-                    <div className="btn">
-                        <button onClick={this.setLogin} type="button" className="btn btn-primary" id="sbmtbtn">Login
-                        </button>
-                    </div>
-                    <div className="link">
-                    </div>
-                </div>
-            )
+        if (!this.state.checkLogin) {
+            return (this.renderFalse())
         }
-        if (this.state.checkLogin === true) {
-            return (
-                <div>
-                    <AllEvents/>
-                </div>
-            )
+        if (this.state.checkLogin) {
+            return (this.renderTrue())
         }
 
     }
