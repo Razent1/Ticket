@@ -1,0 +1,19 @@
+.salutations div {
+    border-bottom-style: groove;
+    color: #868685;
+}
+
+.drp1 {
+    background-color: whitesmoke;
+    color: #868685;
+    border: whitesmoke;
+}
+
+.dropdown-toggle::after {
+    justify-content: right;
+}
+
+input {
+    background-color: whitesmoke;
+    border: whitesmoke;
+}
