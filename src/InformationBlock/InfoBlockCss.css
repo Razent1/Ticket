@@ -1,4 +1,49 @@
-.slow .toggle-group {
-    transition: left 0.7s;
-    -webkit-transition: left 0.7s;
+
+.form-tabs {
+    width: 100px;
+    height: 80px;
+    position: relative;
+    border-radius: 30px;
+    border: solid 0.5px rgba(91, 128, 93, 0.73);
+}
+
+.form-tabs:hover {
+    box-shadow: 0 0 4px 1px rgba(91, 128, 93, 0.73);
+}
+
+.form-tabs__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, #ff1632, #3575b8);
+    border-radius: 30px;
+    transition: 0.7s;
+    box-shadow: 0 0 5px 2px rgba(91, 128, 93, 0.73);
+    opacity: 1;
+}
+
+.form-tabs__btn {
+    position: relative;
+    padding: 10px 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.9s;
+}
+
+.form-tabs__btn_data {
+    color: #ECEFF1;
+}
+
+.form-tabs__btn_event {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

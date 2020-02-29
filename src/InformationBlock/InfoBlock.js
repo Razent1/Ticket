@@ -12,8 +12,11 @@ class InfoBlock extends React.Component {
     render() {
         return (
             <div>
-                <input className={'btnData'} type="checkbox" data-on="Dates" data-off="Events" checked
-                       data-toggle="toggle" data-style="slow"/>
+                <section className="form-tabs">
+                    <div className="form-tabs__slider"></div>
+                    <button className="form-tabs__btn form-tabs__btn_data" type="button">DATA</button>
+                    <button className="form-tabs__btn form-tabs__btn_event" type="button">EVENT</button>
+                </section>
             </div>
 
 

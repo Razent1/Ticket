@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import './Login/style.css'
+import './Login/styleLogin.css'
 import './Header/styleHeader.css'
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import Header from "./Header/Header";
