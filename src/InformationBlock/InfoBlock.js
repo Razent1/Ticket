@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import './InfoBlockCss.css'
 
+
 class InfoBlock extends React.Component {
     constructor(props) {
         super(props);
@@ -15,7 +16,8 @@ class InfoBlock extends React.Component {
                        data-toggle="toggle" data-style="slow"/>
             </div>
 
-        )
+
+        );
     }
 }
 

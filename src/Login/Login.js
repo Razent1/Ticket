@@ -7,7 +7,7 @@ class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            checkLogin: false,
+            checkLogin: true,
             checkEmail: false,
             checkPassword: false,
             inputEmail: '',
