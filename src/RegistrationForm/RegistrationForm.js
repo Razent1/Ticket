@@ -9,7 +9,7 @@ class RegistrationForm extends React.Component {
                 <div className='col'>Registration</div>
                 <div className='d-flex justify-content-center'>
                     <div className='flex-column w-50'>
-                        <div className='d-inline-flex p-4'>
+                        <div className='title d-inline-flex p-4'>
                             Salutation and address
                         </div>
                         <div className='salutations text-left'>
@@ -37,9 +37,8 @@ class RegistrationForm extends React.Component {
                         </div>
                     </div>
                     <div className='flex-column'>
-                        <div className='d-inline-flex p-4'>
+                        <div className='title d-inline-flex p-4'>
                             Contact Information
-
                         </div>
                         <div className='col'>Email</div>
                         <div className='col'>Password</div>
