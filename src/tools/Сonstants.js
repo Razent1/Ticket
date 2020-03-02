@@ -1,1 +1,1 @@
-export const API_KEY = 'ticketserviceapp.herokuapp.com/';
+export const API_KEY_USER = 'https://ticketserviceapp.herokuapp.com/user';

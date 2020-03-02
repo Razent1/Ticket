@@ -1,5 +1,7 @@
 import React from "react";
-import './registrationStyle.css'
+import './registrationStyle.css';
+import '../tools/Сonstants';
+import {API_KEY_USER} from "../tools/Сonstants";
 
 class RegistrationForm extends React.Component {
 
@@ -16,8 +18,33 @@ class RegistrationForm extends React.Component {
         this.onChangeInput = this.onChangeInput.bind(this);
     }
 
-    handleClick = (event) => {
-        this.setState({});
+    handleClick = async () => {
+        const data = {
+            "gender": parseInt(this.state.gender),
+            "firstName": this.state.firstName,
+            "lastName": this.state.lastName,
+            "email": this.state.email,
+            "password": this.state.password,
+            "phoneNumber": this.state.phoneNumber
+        }
+
+        try {
+            const response = await fetch(API_KEY_USER, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'accept': '*/*',
+                    'Content-Type': 'application/json'
+                }
+            });
+            const json = await response.json();
+            console.log('Успех:', JSON.stringify(json));
+
+        } catch (error) {
+            console.error(error);
+        }
+
+
     }
 
     onChangeInput = (event) => {
