@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e02ef90a-164d-4dd9-b00d-13ac9a78ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RegistrationForm/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistrationForm/RegistrationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegistrationForm/registrationStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistrationForm/registrationStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +99,7 @@
       <updated>1582631860910</updated>
       <workItem from="1582631865601" duration="32214000" />
       <workItem from="1582734438057" duration="13443000" />
-      <workItem from="1583012682972" duration="4596000" />
+      <workItem from="1583012682972" duration="13790000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <created>1582715480540</created>
@@ -152,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583011049087</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="RegistrationForm // checkBx // btn">
+      <created>1583085867427</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583085867427</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,17 +205,18 @@
     <MESSAGE value="newsave" />
     <MESSAGE value="RegistrationForm" />
     <MESSAGE value="RegistrationForm // inputs and disign" />
-    <option name="LAST_COMMIT_MESSAGE" value="RegistrationForm // inputs and disign" />
+    <MESSAGE value="RegistrationForm // checkBx // btn" />
+    <option name="LAST_COMMIT_MESSAGE" value="RegistrationForm // checkBx // btn" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="96" key="#Deployment" timestamp="1582721212952">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="281" y="96" key="#Deployment/0.0.1440.900@0.0.1440.900" timestamp="1582721212952" />
-    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2" timestamp="1583011048310">
+    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2" timestamp="1583085866898">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1583011048310" />
+    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1583085866898" />
     <state x="314" y="76" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1582719817002" />
     <state x="144" y="80" key="DiffContextDialog" timestamp="1582721093909">
       <screen x="0" y="0" width="1440" height="900" />
@@ -248,10 +254,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1582710372660" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1582811478816">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1583085876970">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1582811478816" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1583085876970" />
     <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583012579444">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -265,9 +271,9 @@
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1582654385024" />
     <state x="385" y="228" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1582806660858" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1583085681552">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1583179453589">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583085681552" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583179453589" />
   </component>
 </project>
