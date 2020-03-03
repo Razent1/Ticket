@@ -13,6 +13,7 @@ class RegistrationForm extends React.Component {
             lastName: '',
             email: '',
             password: '',
+            confirmPassword: '',
             phoneNumber: ''
         }
         this.onChangeInput = this.onChangeInput.bind(this);
@@ -28,23 +29,32 @@ class RegistrationForm extends React.Component {
             "phoneNumber": this.state.phoneNumber
         }
 
-        try {
-            const response = await fetch(API_KEY_USER, {
-                method: 'POST',
-                body: JSON.stringify(data),
-                headers: {
-                    'accept': '*/*',
-                    'Content-Type': 'application/json'
+
+        if (this.state.password === this.state.confirmPassword) {
+            try {
+                const response = await fetch(API_KEY_USER, {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    headers: {
+                        'accept': '*/*',
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const json = await response.json();
+                let parseObj = JSON.parse(JSON.stringify(json));
+                console.log(parseObj); //convert json string information to object // we will work with this obj, try to keep errors into the fields
+                console.log('Успех:', JSON.stringify(json));
+                if (!response.ok) {
+                    throw new Error(JSON.stringify(json));
                 }
-            });
-            const json = await response.json();
-            console.log('Успех:', JSON.stringify(json));
 
-        } catch (error) {
-            console.error(error);
+            } catch (error) {
+                console.error(error);
+            }
+        } else {
+            console.log("Incorrect password");
         }
-
-
     }
 
     onChangeInput = (event) => {
@@ -88,13 +98,15 @@ class RegistrationForm extends React.Component {
                                                                 placeholder='Email'
                                                                 value={this.state.email} onChange={this.onChangeInput}/>
                             </div>
-                            <div className='flex-column'><input name="password" className='w-100' type="text"
+                            <div className='flex-column'><input name="password" className='w-100' type="password"
                                                                 placeholder='Password'
                                                                 value={this.state.password}
                                                                 onChange={this.onChangeInput}/>
                             </div>
-                            <div className='flex-column'><input className='w-100' type="text"
+                            <div className='flex-column'><input name="confirmPassword" className='w-100' type="password"
                                                                 placeholder='Confirm Password'
+                                                                value={this.state.confirmPassword}
+                                                                onChange={this.onChangeInput}
                             /></div>
                             <div className='flex-column'><input name='phoneNumber' className='w-100' type="text"
                                                                 placeholder='Phone Number'

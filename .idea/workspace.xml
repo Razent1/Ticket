@@ -4,7 +4,6 @@
     <list default="true" id="e02ef90a-164d-4dd9-b00d-13ac9a78ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RegistrationForm/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistrationForm/RegistrationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/Сonstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/Сonstants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,7 @@
       <updated>1582631860910</updated>
       <workItem from="1582631865601" duration="32214000" />
       <workItem from="1582734438057" duration="13443000" />
-      <workItem from="1583012682972" duration="16184000" />
+      <workItem from="1583012682972" duration="22874000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <created>1582715480540</created>
@@ -165,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583180575219</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="RegistrationForm // API">
+      <created>1583183384650</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583183384651</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,17 +221,18 @@
     <MESSAGE value="RegistrationForm // inputs and disign" />
     <MESSAGE value="RegistrationForm // checkBx // btn" />
     <MESSAGE value="RegistrationForm // preparations to API" />
-    <option name="LAST_COMMIT_MESSAGE" value="RegistrationForm // preparations to API" />
+    <MESSAGE value="RegistrationForm // API" />
+    <option name="LAST_COMMIT_MESSAGE" value="RegistrationForm // API" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="96" key="#Deployment" timestamp="1582721212952">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="281" y="96" key="#Deployment/0.0.1440.900@0.0.1440.900" timestamp="1582721212952" />
-    <state x="293" y="85" width="941" height="795" key="CommitChangelistDialog2" timestamp="1583180574780">
+    <state x="293" y="85" width="941" height="795" key="CommitChangelistDialog2" timestamp="1583183384183">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="293" y="85" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1583180574780" />
+    <state x="293" y="85" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1583183384183" />
     <state x="314" y="76" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1582719817002" />
     <state x="144" y="80" key="DiffContextDialog" timestamp="1582721093909">
       <screen x="0" y="0" width="1440" height="900" />
@@ -263,10 +270,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1582710372660" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1583180582666">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1583183392614">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1583180582666" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1583183392614" />
     <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583012579444">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
