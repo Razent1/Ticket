@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e02ef90a-164d-4dd9-b00d-13ac9a78ac0c" name="Default Changelist" comment="change login for easy read&#10;start create InfoBlock&#10;____Roman___">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ticket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ticket.iml" afterDir="false" />
+    <list default="true" id="e02ef90a-164d-4dd9-b00d-13ac9a78ac0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InformationBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/InformationBlock/InfoBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegistrationForm/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistrationForm/RegistrationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegistrationForm/registrationStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistrationForm/registrationStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,26 +43,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workspace_masa_2019\webStorm\ticket\src" />
       <recent name="$PROJECT_DIR$/src/tools" />
       <recent name="$PROJECT_DIR$/src/Header" />
       <recent name="$PROJECT_DIR$/src/Login" />
       <recent name="$PROJECT_DIR$/public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/img" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -109,11 +99,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582631860910</updated>
-      <workItem from="1582631865601" duration="31823000" />
-      <workItem from="1582820177070" duration="2386000" />
-      <workItem from="1582823133112" duration="2632000" />
-      <workItem from="1582882242316" duration="3775000" />
-      <workItem from="1583000513608" duration="262000" />
+      <workItem from="1582631865601" duration="32214000" />
+      <workItem from="1582734438057" duration="13443000" />
+      <workItem from="1583012682972" duration="4596000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <created>1582715480540</created>
@@ -143,14 +131,28 @@
       <option name="project" value="LOCAL" />
       <updated>1582721289114</updated>
     </task>
-    <task id="LOCAL-00005" summary="change login for easy read&#10;start create InfoBlock&#10;____Roman___">
-      <created>1582824080919</created>
+    <task id="LOCAL-00005" summary="newsave">
+      <created>1582721308301</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1582824080919</updated>
+      <updated>1582721308301</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="RegistrationForm">
+      <created>1582811463070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582811463070</updated>
+    </task>
+    <task id="LOCAL-00007" summary="RegistrationForm // inputs and disign">
+      <created>1583011049087</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583011049087</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,30 +197,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="save2" />
     <MESSAGE value="save" />
-    <MESSAGE value="change login for easy read&#10;start create InfoBlock&#10;____Roman___" />
-    <option name="LAST_COMMIT_MESSAGE" value="change login for easy read&#10;start create InfoBlock&#10;____Roman___" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="newsave" />
+    <MESSAGE value="RegistrationForm" />
+    <MESSAGE value="RegistrationForm // inputs and disign" />
+    <option name="LAST_COMMIT_MESSAGE" value="RegistrationForm // inputs and disign" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="96" key="#Deployment" timestamp="1582721212952">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="281" y="96" key="#Deployment/0.0.1440.900@0.0.1440.900" timestamp="1582721212952" />
-    <state x="275" y="25" key="#ESLint" timestamp="1582884301194">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2" timestamp="1583011048310">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="275" y="25" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1582884301194" />
-    <state x="275" y="25" key="#Notifications" timestamp="1582824073240">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="25" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1582824073240" />
-    <state x="204" y="0" width="941" height="795" key="CommitChangelistDialog2" timestamp="1583000555130">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="204" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583000555130" />
-    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1582721287813" />
+    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1583011048310" />
     <state x="314" y="76" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1582719817002" />
     <state x="144" y="80" key="DiffContextDialog" timestamp="1582721093909">
       <screen x="0" y="0" width="1440" height="900" />
@@ -232,51 +224,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="305" y="239" width="580" height="347" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1582720546287" />
-    <state width="659" height="183" key="GridCell.Tab.0.bottom" timestamp="1583000602652">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1419" height="319" key="GridCell.Tab.0.bottom" timestamp="1583012781047">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="659" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583000602652" />
-    <state width="1419" height="126" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582716591386" />
-    <state width="659" height="183" key="GridCell.Tab.0.center" timestamp="1583000602652">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583012781047" />
+    <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583012664234" />
+    <state width="1419" height="319" key="GridCell.Tab.0.center" timestamp="1583012781046">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="659" height="183" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583000602652" />
-    <state width="1419" height="126" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582716591385" />
-    <state width="659" height="183" key="GridCell.Tab.0.left" timestamp="1583000602652">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1419" height="319" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583012781046" />
+    <state width="1419" height="319" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1583012664234" />
+    <state width="1419" height="319" key="GridCell.Tab.0.left" timestamp="1583012781045">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="659" height="183" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583000602652" />
-    <state width="1419" height="126" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582716591382" />
-    <state width="659" height="183" key="GridCell.Tab.0.right" timestamp="1583000602652">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1419" height="319" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583012781045" />
+    <state width="1419" height="319" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1583012664233" />
+    <state width="1419" height="319" key="GridCell.Tab.0.right" timestamp="1583012781046">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="659" height="183" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583000602652" />
-    <state width="1419" height="126" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582716591385" />
+    <state width="1419" height="319" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583012781046" />
+    <state width="1419" height="319" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1583012664234" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1582710372660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1582710372660" />
-    <state x="304" y="154" key="Vcs.Push.Dialog.v2" timestamp="1582882404422">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="304" y="154" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1582882404422" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1582720062511" />
-    <state x="334" y="36" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582888439844">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="334" y="36" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1582888439844" />
-    <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582720618215">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1582811478816">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1582720618215" />
-    <state x="365" y="170" key="run.anything.popup" timestamp="1582811917189">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1582811478816" />
+    <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583012579444">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="365" y="170" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1582811917189" />
+    <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1583012579444" />
+    <state x="419" y="248" key="git4idea.merge.GitPullDialog" timestamp="1583012597186">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="419" y="248" key="git4idea.merge.GitPullDialog/0.0.1440.900@0.0.1440.900" timestamp="1583012597186" />
+    <state x="385" y="228" key="run.anything.popup" timestamp="1582806660858">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1582654385024" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1582707456659">
+    <state x="385" y="228" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1582806660858" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1583085681552">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1582707456659" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1583085681552" />
   </component>
 </project>
