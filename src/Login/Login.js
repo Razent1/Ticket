@@ -84,11 +84,13 @@ class Login extends React.Component {
             </div>
         );
     }
+
     renderTrue = () => {
         return (
-            <div>
-                <AllEvents/>
-                <InfoBlock/>
+            <div className="container-fluid">
+                <div className={'row'}><InfoBlock className="col-sm-3"/>
+                    <AllEvents className="col-sm-9"/></div>
+
             </div>
         );
     }
