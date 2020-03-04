@@ -14,9 +14,9 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
-                <Login/>
-                {/*<RegistrationForm/>*/}
+                {/*<Header/>*/}
+                {/*<Login/>*/}
+                <RegistrationForm/>
             </div>
         )
 

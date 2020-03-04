@@ -18,7 +18,7 @@ class RegistrationForm extends React.Component {
             phoneNumber: '',
             firstRender: false,
             fieldsErrors: {},
-            err: true // if we catch errors, we will render our page with new error fields
+            err: false // if we catch errors, we will render our page with new error fields
         }
         this.onChangeInput = this.onChangeInput.bind(this);
     }
@@ -52,6 +52,8 @@ class RegistrationForm extends React.Component {
                 console.log(parseObj); //convert json string information to object // we will work with this obj, try to keep errors into the fields
                 console.log('Успех:', JSON.stringify(json));
                 if (!response.ok) {
+                    this.setState({err: true}); // у нас появляется ошиька, поэтому нам нужно по-другому рендерить страницу и выводить информациюБ
+                    // о том, где конкретно пользователь ввел неправильно данные
                     parseObj = JSON.parse(JSON.stringify(json));
                     console.log(parseObj); //convert json st
                     throw new Error(JSON.stringify(json));
@@ -149,8 +151,17 @@ class RegistrationForm extends React.Component {
                 </div>
             )
         }
-        if(this.state.firstRender === false){
-            //TODO
+        if (this.state.firstRender === true) { //рендер после отправки формы регистрации
+            if (this.state.err === false) { // рендер в случае отсутсвия ошибок при вводе данных
+                return (
+                    <div>Graduations! You have registered</div>
+                )
+            }
+            if (this.state.err === true) { //рендер в случае наличия ошибок при вводе данных
+                return (
+                    <div>TODO</div>
+                )
+            }
         }
     }
 }
