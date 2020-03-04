@@ -1,9 +1,30 @@
 
+th {
+    height: 15px;
+    width: 25px;
+}
+
+.infoBlock {
+    height: auto;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px #ccc;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    background-color: #fff;
+    opacity: 0.9;
+    overflow: hidden;
+}
+
 .form-tabs {
     width: 100px;
     height: 80px;
+    /*margin: 55px auto;*/
     position: relative;
+    top: 150px;
     border-radius: 30px;
+    background: #ffffff;
     border: solid 0.5px rgba(91, 128, 93, 0.73);
 }
 
@@ -12,11 +33,10 @@
 }
 
 .form-tabs__slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: relative;
+    /*top: 100px;*/
     height: 40px;
+    width: 100px;
     background: linear-gradient(to bottom, #ff1632, #3575b8);
     border-radius: 30px;
     transition: 0.7s;
@@ -26,7 +46,8 @@
 
 .form-tabs__btn {
     position: relative;
-    padding: 10px 40px;
+    top: -35px;
+    padding: 10px 45px;
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -41,9 +62,38 @@
 
 .form-tabs__btn_data {
     color: #ECEFF1;
+    /*padding-left: 25px;*/
+    padding-left: 30px;
+    padding-right: 10px;
 }
 
 .form-tabs__btn_event {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 10px;
 }
+
+.form-data {
+    position: relative;
+    top: -520px;
+    left: 0;
+    margin-left: 115px;
+    margin-top: 20px;
+    transition: 0.1s;
+}
+
+.form-event {
+    position: relative;
+    top: -150px;
+    left: 0px;
+    margin-left: 115px;
+    margin-top: 20px;
+    transition: 0.1s;
+}
+
+.credentials-form-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+
