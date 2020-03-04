@@ -1,0 +1,47 @@
+
+
+
+.salutations div {
+    border-bottom-style: groove;
+    color: #868685;
+}
+
+.title {
+    color: #231f20;
+    opacity: .5;
+    font-weight: bold;
+
+}
+
+.btnRegister{
+    background-color: #868685;
+    color: whitesmoke;
+    width: 10em;
+}
+
+.regist {
+    font-size: 32px;
+    color: #231f20;
+    font-weight: bold;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 10px solid black;
+    opacity: .7;
+}
+
+.drp1 {
+    background-color: whitesmoke;
+    color: #868685;
+    border: whitesmoke;
+}
+
+.dropdown-toggle::after {
+    justify-content: right;
+}
+
+input {
+    background-color: whitesmoke;
+    border: whitesmoke;
+}

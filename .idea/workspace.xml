@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e02ef90a-164d-4dd9-b00d-13ac9a78ac0c" name="Default Changelist" comment="">
+    <list default="true" id="e02ef90a-164d-4dd9-b00d-13ac9a78ac0c" name="Default Changelist" comment="change login for easy read&#10;start create InfoBlock&#10;____Roman___">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ticket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ticket.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InformationBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/InformationBlock/InfoBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InformationBlock/InfoBlockCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/InformationBlock/InfoBlockCss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/styleLogin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index1.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +35,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="c521662e-971d-49b7-89c1-74b561623fea" />
   </component>
   <component name="ProjectId" id="1YIZ2QMBVwH1lraAyXdlrv26Mbz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -111,7 +113,7 @@
       <workItem from="1582820177070" duration="2386000" />
       <workItem from="1582823133112" duration="2632000" />
       <workItem from="1582882242316" duration="3775000" />
-      <workItem from="1583000513608" duration="3545000" />
+      <workItem from="1583000513608" duration="262000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <created>1582715480540</created>
@@ -148,14 +150,7 @@
       <option name="project" value="LOCAL" />
       <updated>1582824080919</updated>
     </task>
-    <task id="LOCAL-00006" summary="change login for easy read&#10;start create InfoBlock&#10;____Roman___">
-      <created>1583000875602</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1583000875602</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,14 +210,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1582884301194" />
-    <state x="275" y="25" key="#Notifications" timestamp="1583001055200">
+    <state x="275" y="25" key="#Notifications" timestamp="1582824073240">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="25" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1583001055200" />
-    <state x="204" y="0" width="941" height="795" key="CommitChangelistDialog2" timestamp="1583000873418">
+    <state x="275" y="25" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1582824073240" />
+    <state x="204" y="0" width="941" height="795" key="CommitChangelistDialog2" timestamp="1583000555130">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="204" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583000873418" />
+    <state x="204" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583000555130" />
     <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1582721287813" />
     <state x="314" y="76" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1582719817002" />
     <state x="144" y="80" key="DiffContextDialog" timestamp="1582721093909">
@@ -233,10 +228,6 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="529" y="373" key="Github.CreateGistDialog/0.0.1440.900@0.0.1440.900" timestamp="1582720660436" />
-    <state x="887" y="284" key="Github.Dialog.Accounts.Choose" timestamp="1583001001638">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="887" y="284" key="Github.Dialog.Accounts.Choose/0.0.1366.728@0.0.1366.728" timestamp="1583001001638" />
     <state x="305" y="239" width="580" height="347" key="Github.ShareDialog" timestamp="1582720546287">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -265,10 +256,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1582710372660" />
-    <state x="304" y="154" key="Vcs.Push.Dialog.v2" timestamp="1583000977704">
+    <state x="304" y="154" key="Vcs.Push.Dialog.v2" timestamp="1582882404422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="304" y="154" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583000977704" />
+    <state x="304" y="154" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1582882404422" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1582720062511" />
     <state x="334" y="36" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582888439844">
       <screen x="0" y="0" width="1366" height="728" />
