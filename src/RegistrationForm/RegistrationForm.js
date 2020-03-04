@@ -36,7 +36,7 @@ class RegistrationForm extends React.Component {
         }
 
 
-        if (this.state.password === this.state.confirmPassword) {
+        if (this.state.password === this.state.confirmPassword) { // password validation
             try {
                 const response = await fetch(API_KEY_USER, {
                     method: 'POST',
