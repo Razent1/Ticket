@@ -1,6 +1,7 @@
 import React from "react";
 import AllEvents from "../AllEvents";
 import InfoBlock from "../InformationBlock/InfoBlock";
+import RegistrationForm from "../RegistrationForm/RegistrationForm";
 
 class Login extends React.Component {
 
@@ -22,6 +23,7 @@ class Login extends React.Component {
     handleChangeEmail = (event) => {
         this.setState({inputEmail: event.target.value});
         this.emailValidation(this.state.inputEmail);
+
     }
 
     handleChangePassword = (event) => {
@@ -73,6 +75,7 @@ class Login extends React.Component {
                                    name="inputPassword"/>
                         </div>
 
+
                     </div>
                 </form>
                 <div className="btn">
@@ -86,25 +89,24 @@ class Login extends React.Component {
     }
 
     renderTrue = () => {
+        //в allevents надо будет передать атрибут с информацией о пользователе, который залогинился
         return (
             <div className="container-fluid">
                 <div className={'row'}><InfoBlock className="col-sm-3"/>
-                    <AllEvents className="col-sm-9"/></div>
+                    <AllEvents email={this.state.inputEmail} password={this.state.inputPassword} className="col-sm-9"/>
+                </div>
 
             </div>
         );
     }
 
     render() {
-        console.log(this.state.inputEmail);
-        console.log(this.state.checkEmail);
         if (!this.state.checkLogin) {
             return (this.renderFalse())
         }
         if (this.state.checkLogin) {
             return (this.renderTrue())
         }
-
     }
 
 }

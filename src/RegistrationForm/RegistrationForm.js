@@ -21,6 +21,7 @@ class RegistrationForm extends React.Component {
             err: false // if we catch errors, we will render our page with new error fields
         }
         this.onChangeInput = this.onChangeInput.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick = async () => {
@@ -64,6 +65,9 @@ class RegistrationForm extends React.Component {
         } else {
             console.log("Incorrect password");
         }
+
+        this.setState({fieldsErrors: parseObj});
+        console.log(this.state.fieldsErrors.fields.lastName[0]);
 
     }
 
