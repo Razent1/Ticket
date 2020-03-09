@@ -29,7 +29,7 @@ class AllEvents extends React.Component {
                             <div className="array col-sm-9">
                                 <div className="row">
                                     <div className="concertPic col-sm">
-                                        <img className="concertJpg" src="img/2020-02-24%2021.04.53.jpg" alt=""/>
+                                        <img className="concertJpg" src="../public/img/2020-02-24%2021.04.53.jpg" alt=""/>
                                     </div>
                                     <div className="col-sm">
                                         <div className="progress">

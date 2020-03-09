@@ -94,5 +94,107 @@ th {
     margin-bottom: 50px;
 }
 
+/*.muted{*/
+/*    background-color: rgba(246, 215, 159, 0.51);*/
+/*    font-style: italic;*/
+/*}*/
 
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
 
+.calendar {
+    margin: 10px;
+    color: #757575;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.bc_title {
+    font-family: "PT Sans Caption";
+    color: #061f37;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px 15px;
+    background: #fdfdfd;
+    border-left: solid 1px #e1e1e1;
+    border-top: solid 1px #e1e1e1;
+    border-right: solid 1px #e1e1e1;
+    letter-spacing: 1px;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+.calendar td, th {
+    font-family: verdana, serif;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 4px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.weekday {
+    color: #804040;
+    font-family: verdana;
+}
+
+.day-active {
+    color: #a52a2a;
+    font-family: verdana;
+}
+
+.day-active-v {
+    color: #4b73d4;
+}
+
+.monthlink {
+    color: #9d4d50;
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+.bc {
+    border: solid 1px #e1e1e1;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+center {
+    display: block;
+    text-align: -webkit-center;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    border-color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.day-current {
+    background: #F9F9F9;
+    border: 1px solid #c7c7c7;
+}
