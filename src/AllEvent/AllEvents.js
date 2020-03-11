@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import './AllEventCss.css';
+import './AllEvent.css';
 
 class AllEvents extends React.Component {
 

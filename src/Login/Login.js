@@ -1,6 +1,7 @@
 import React from "react";
 import AllEvents from "../AllEvent/AllEvents";
 import InfoBlock from "../InformationBlock/InfoBlock";
+import App from "../App";
 
 class Login extends React.Component {
 
@@ -9,7 +10,7 @@ class Login extends React.Component {
         this.state = {
             checkLogin: true,
             checkEmail: false,
-            checkPassword: false,
+            checkPassword: true,
             inputEmail: '',
             inputPassword: ''
         };
@@ -30,8 +31,10 @@ class Login extends React.Component {
     }
 
     getAdminInformation = (event) => {
-        let email = event.target.inputEmail.value;
-        let password = event.target.inputPassword.value;
+        // let email = event.target.inputEmail.value;
+        // let password = event.target.inputPassword.value;
+
+
     }
 
     emailValidation = (email) => {
@@ -90,13 +93,14 @@ class Login extends React.Component {
     renderTrue = () => {
         //в allevents надо будет передать атрибут с информацией о пользователе, который залогинился
         return (
-            <div className="container-fluid">
-                <div className={'row'}>
-                    <InfoBlock className="col-sm-3"/>
-                    <AllEvents email={this.state.inputEmail} password={this.state.inputPassword} className="col-sm"/>
-                </div>
-
-            </div>
+            <App checkLogin={this.state.checkLogin}/>
+            // <div className="container-fluid">
+            //     <div className={'row'}>
+            //         <InfoBlock className="col-sm-3"/>
+            //         <AllEvents email={this.state.inputEmail} password={this.state.inputPassword} className="col-sm"/>
+            //     </div>
+            //
+            // </div>
         );
     }
 

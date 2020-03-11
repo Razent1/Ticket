@@ -1,7 +1,7 @@
 import React from 'react';
 import './styleHeader.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import logo from '../img/logo_col.svg';
+import logo from '../img/logo_white.svg';
 
 class Header extends React.Component{
 
@@ -11,7 +11,7 @@ class Header extends React.Component{
             <header className="mainArray container-fluid">
                 <div className="row">
                     <div className="logo col-sm-3">
-                        <img className="logoImg" src="logo_white.svg" alt="logo"/>
+                        <img className="logoImg w-100" src={logo} alt="logo"/>
                     </div>
                     <div className="col-sm-9">
                         <nav className="navbar">
