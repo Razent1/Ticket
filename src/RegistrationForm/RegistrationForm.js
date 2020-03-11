@@ -64,6 +64,7 @@ class RegistrationForm extends React.Component {
                     parseObj = JSON.parse(JSON.stringify(json));
                     console.log(parseObj); //convert json st
                     throw new Error(JSON.stringify(json));
+
                 }
             } catch (error) {
                 console.error(error);
@@ -150,35 +151,42 @@ class RegistrationForm extends React.Component {
                                         <option value='2'>Mrs/Miss</option>
                                     </select>
                                 </div>
-                                <div className='flex-column'><input name="firstName" className='w-100' type="text"
-                                                                    placeholder='Name'
-                                                                    value={this.state.firstName}
-                                                                    onChange={this.onChangeInput}/></div>
-                                <div className='flex-column'><input name="lastName" className='w-100' type="text"
-                                                                    placeholder='Surname'
-                                                                    value={this.state.lastName}
-                                                                    onChange={this.onChangeInput}/>
+                                <div className='flex-column'>
+                                    <input name="firstName" className='w-100' type="text"
+                                           placeholder='Name'
+                                           value={this.state.firstName}
+                                           onChange={this.onChangeInput}/></div>
+                                <div className='flex-column'>
+                                    <input name="lastName" className='w-100' type="text"
+                                           placeholder='Surname'
+                                           value={this.state.lastName}
+                                           onChange={this.onChangeInput}/>
                                 </div>
-                                <div className='flex-column'><input name="email" className='w-100' type="email"
-                                                                    placeholder='Email'
-                                                                    value={this.state.email}
-                                                                    onChange={this.onChangeInput}/>
+                                <div className='flex-column'>
+                                    <input name="email" className='w-100' type="email"
+                                           placeholder='Email'
+                                           value={this.state.email}
+                                           onChange={this.onChangeInput}/>
                                 </div>
-                                <div className='flex-column'><input name="password" className='w-100' type="password"
-                                                                    placeholder='Password'
-                                                                    value={this.state.password}
-                                                                    onChange={this.onChangeInput}/>
+                                <div className='flex-column'>
+                                    <input name="password" className='w-100' type="password"
+                                           placeholder='Password'
+                                           value={this.state.password}
+                                           onChange={this.onChangeInput}/>
                                 </div>
-                                <div className='flex-column'><input name="confirmPassword" className='w-100'
-                                                                    type="password"
-                                                                    placeholder='Confirm Password'
-                                                                    value={this.state.confirmPassword}
-                                                                    onChange={this.onChangeInput}
-                                /></div>
-                                <div className='flex-column'><input name='phoneNumber' className='w-100' type="text"
-                                                                    placeholder='Phone Number'
-                                                                    value={this.state.phoneNumber}
-                                                                    onChange={this.onChangeInput}/></div>
+                                <div className='flex-column'>
+                                    <input name="confirmPassword" className='w-100'
+                                           type="password"
+                                           placeholder='Confirm Password'
+                                           value={this.state.confirmPassword}
+                                           onChange={this.onChangeInput}/>
+                                </div>
+                                <div className='flex-column'>
+                                    <input name='phoneNumber' className='w-100' type="text"
+                                           placeholder='Phone Number'
+                                           value={this.state.phoneNumber}
+                                           onChange={this.onChangeInput}/>
+                                </div>
 
                             </div>
                             <div className='check flex-column text-left small'>
@@ -228,37 +236,44 @@ class RegistrationForm extends React.Component {
                                             <option value='2'>Mrs/Miss</option>
                                         </select>
                                     </div>
-                                    <div className='flex-column'><input name="firstName" className='w-100' type="text"
+                                    <div className='flex-column'>
+                                        <input name="firstName" className='w-100' type="text"
 
-                                                                        placeholder={this.state.errFirstName}
-                                                                        value={this.state.firstName}
-                                                                        onChange={this.onChangeInput}/></div>
-                                    <div className='flex-column'><input name="lastName" className='w-100' type="text"
-                                                                        placeholder={this.state.errLastName}
-                                                                        value={this.state.lastName}
-                                                                        onChange={this.onChangeInput}/>
+                                               placeholder={this.state.errFirstName}
+                                               value={this.state.firstName}
+                                               onChange={this.onChangeInput}/></div>
+                                    <div className='flex-column'>
+                                        <input name="lastName" className='w-100' type="text"
+                                               placeholder={this.state.errLastName}
+                                               value={this.state.lastName}
+                                               onChange={this.onChangeInput}/>
                                     </div>
-                                    <div className='flex-column'><input name="email" className='w-100' type="email"
-                                                                        placeholder={this.state.errEmail}
-                                                                        value={this.state.email}
-                                                                        onChange={this.onChangeInput}/>
+                                    <div className='flex-column'>
+                                        <input name="email" className='w-100' type="email"
+                                               placeholder={this.state.errEmail}
+                                               value={this.state.email}
+                                               onChange={this.onChangeInput}/>
                                     </div>
-                                    <div className='flex-column'><input name="password" className='w-100'
-                                                                        type="password"
-                                                                        placeholder={this.state.errPassword}
-                                                                        value={this.state.password}
-                                                                        onChange={this.onChangeInput}/>
+                                    <div className='flex-column'>
+                                        <input name="password" className='w-100'
+                                               type="password"
+                                               placeholder={this.state.errPassword}
+                                               value={this.state.password}
+                                               onChange={this.onChangeInput}/>
                                     </div>
-                                    <div className='flex-column'><input name="confirmPassword" className='w-100'
-                                                                        type="password"
-                                                                        placeholder={this.state.errConfirmPassword}
-                                                                        value={this.state.confirmPassword}
-                                                                        onChange={this.onChangeInput}
-                                    /></div>
-                                    <div className='flex-column'><input name='phoneNumber' className='w-100' type="text"
-                                                                        placeholder={this.state.errPhoneNumber}
-                                                                        value={this.state.phoneNumber}
-                                                                        onChange={this.onChangeInput}/></div>
+                                    <div className='flex-column'>
+                                        <input name="confirmPassword" className='w-100'
+                                               type="password"
+                                               placeholder={this.state.errConfirmPassword}
+                                               value={this.state.confirmPassword}
+                                               onChange={this.onChangeInput}/>
+                                    </div>
+                                    <div className='flex-column'>
+                                        <input name='phoneNumber' className='w-100' type="text"
+                                               placeholder={this.state.errPhoneNumber}
+                                               value={this.state.phoneNumber}
+                                               onChange={this.onChangeInput}/>
+                                    </div>
 
                                 </div>
                                 <div className='check flex-column text-left small'>
