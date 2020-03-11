@@ -77,13 +77,6 @@ class RegistrationForm extends React.Component {
             this.setState({errPhoneNumber: 'Phone Number'});
             this.setState({errConfirmPassword: "Passwords don't match"});
         }
-
-        this.setState({firstName: ''}); //обнуляем значения после кнопки регистрации, чтобы было видно плейсхолдеры с ошибкой
-        this.setState({lastName: ''});
-        this.setState({email: ''});
-        this.setState({password: ''});
-        this.setState({confirmPassword: ''});
-        this.setState({phoneNumber: ''});
         this.setState({errConfirmPassword: 'Confirm Password'});
 
         if (parseObj != null) {
@@ -121,18 +114,94 @@ class RegistrationForm extends React.Component {
         if (this.state.fieldsErrors.fields.password) {
             this.setState({errPassword: this.state.fieldsErrors.fields.password[0]});
         } else {
-            this.setState({errPassword: "Email"});
+            this.setState({errPassword: "Password"});
         }
         if (this.state.fieldsErrors.fields.phoneNumber) {
             this.setState({errPhoneNumber: this.state.fieldsErrors.fields.phoneNumber[0]});
         } else {
-            this.setState({errPhoneNumber: "Email"});
+            this.setState({errPhoneNumber: "Phone Number"});
         }
     }
 
+    firstRender = () => {
+        return (
+            <div className='container w-100'>
+                <div className='regist flex-column'><u>REGISTRATION</u></div>
+                <div className='d-flex justify-content-center'>
+                    <div className='flex-column w-50'>
+                        <div className='title d-inline-flex p-4'>
+                            Contact information
+                        </div>
+                        <div className='salutations text-left'>
+                            <div className='flex-column form-inline w-100'>
+                                <select onChange={this.onClickSelect}
+                                        className="drp1 w-100 custom-select my-1 mr-sm-2"
+                                        id="inlineFormCustomSelectPref">
+                                    <option value='1'>Mr.</option>
+                                    <option value='2'>Mrs/Miss</option>
+                                </select>
+                            </div>
+                            <div className='flex-column'><input name="firstName" className='w-100' type="text"
+                                                                placeholder='Name'
+                                                                value={this.state.firstName}
+                                                                onChange={this.onChangeInput}/></div>
+                            <div className='flex-column'><input name="lastName" className='w-100' type="text"
+                                                                placeholder='Surname'
+                                                                value={this.state.lastName}
+                                                                onChange={this.onChangeInput}/>
+                            </div>
+                            <div className='flex-column'><input name="email" className='w-100' type="email"
+                                                                placeholder='Email'
+                                                                value={this.state.email}
+                                                                onChange={this.onChangeInput}/>
+                            </div>
+                            <div className='flex-column'><input name="password" className='w-100' type="password"
+                                                                placeholder='Password'
+                                                                value={this.state.password}
+                                                                onChange={this.onChangeInput}/>
+                            </div>
+                            <div className='flex-column'><input name="confirmPassword" className='w-100'
+                                                                type="password"
+                                                                placeholder='Confirm Password'
+                                                                value={this.state.confirmPassword}
+                                                                onChange={this.onChangeInput}
+                            /></div>
+                            <div className='flex-column'><input name='phoneNumber' className='w-100' type="text"
+                                                                placeholder='Phone Number'
+                                                                value={this.state.phoneNumber}
+                                                                onChange={this.onChangeInput}/></div>
 
-    render() {
-        if (this.state.firstRender === false) {
+                        </div>
+                        <div className='check flex-column text-left small'>
+                            <div className="form-check">
+                                <input className="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
+                                <label className="form-check-label" htmlFor="defaultCheck1">
+                                    I have read
+                                </label>
+                            </div>
+                            <div className="form-check">
+                                <input className="form-check-input" type="checkbox" value="" id="defaultCheck2"/>
+                                <label className="form-check-label" htmlFor="defaultCheck2">
+                                    I agree
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className='flex-column'>
+                            <button onClick={this.handleClick} className='btnRegister'>Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+    secondRender = () => {
+        if (this.state.err === false) { // рендер в случае отсутсвия ошибок при вводе данных
+            return (
+                <div>Graduations! You have registered</div>
+            )
+        }
+        if (this.state.err === true) { //рендер в случае наличия ошибок при вводе данных
             return (
                 <div className='container w-100'>
                     <div className='regist flex-column'><u>REGISTRATION</u></div>
@@ -151,45 +220,49 @@ class RegistrationForm extends React.Component {
                                     </select>
                                 </div>
                                 <div className='flex-column'><input name="firstName" className='w-100' type="text"
-                                                                    placeholder='Name'
+
+                                                                    placeholder={this.state.errFirstName}
                                                                     value={this.state.firstName}
                                                                     onChange={this.onChangeInput}/></div>
                                 <div className='flex-column'><input name="lastName" className='w-100' type="text"
-                                                                    placeholder='Surname'
+                                                                    placeholder={this.state.errLastName}
                                                                     value={this.state.lastName}
                                                                     onChange={this.onChangeInput}/>
                                 </div>
                                 <div className='flex-column'><input name="email" className='w-100' type="email"
-                                                                    placeholder='Email'
+                                                                    placeholder={this.state.errEmail}
                                                                     value={this.state.email}
                                                                     onChange={this.onChangeInput}/>
                                 </div>
-                                <div className='flex-column'><input name="password" className='w-100' type="password"
-                                                                    placeholder='Password'
+                                <div className='flex-column'><input name="password" className='w-100'
+                                                                    type="password"
+                                                                    placeholder={this.state.errPassword}
                                                                     value={this.state.password}
                                                                     onChange={this.onChangeInput}/>
                                 </div>
                                 <div className='flex-column'><input name="confirmPassword" className='w-100'
                                                                     type="password"
-                                                                    placeholder='Confirm Password'
+                                                                    placeholder={this.state.errConfirmPassword}
                                                                     value={this.state.confirmPassword}
                                                                     onChange={this.onChangeInput}
                                 /></div>
                                 <div className='flex-column'><input name='phoneNumber' className='w-100' type="text"
-                                                                    placeholder='Phone Number'
+                                                                    placeholder={this.state.errPhoneNumber}
                                                                     value={this.state.phoneNumber}
                                                                     onChange={this.onChangeInput}/></div>
 
                             </div>
                             <div className='check flex-column text-left small'>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
+                                    <input className="form-check-input" type="checkbox" value=""
+                                           id="defaultCheck1"/>
                                     <label className="form-check-label" htmlFor="defaultCheck1">
                                         I have read
                                     </label>
                                 </div>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" value="" id="defaultCheck2"/>
+                                    <input className="form-check-input" type="checkbox" value=""
+                                           id="defaultCheck2"/>
                                     <label className="form-check-label" htmlFor="defaultCheck2">
                                         I agree
                                     </label>
@@ -204,88 +277,16 @@ class RegistrationForm extends React.Component {
                 </div>
             )
         }
+    }
+
+
+    render() {
+        if (this.state.firstRender === false) {
+            return (this.firstRender());
+
+        }
         if (this.state.firstRender === true) { //рендер после отправки формы регистрации
-            if (this.state.err === false) { // рендер в случае отсутсвия ошибок при вводе данных
-                return (
-                    <div>Graduations! You have registered</div>
-                )
-            }
-            if (this.state.err === true) { //рендер в случае наличия ошибок при вводе данных
-                return (
-                    <div className='container w-100'>
-                        <div className='regist flex-column'><u>REGISTRATION</u></div>
-                        <div className='d-flex justify-content-center'>
-                            <div className='flex-column w-50'>
-                                <div className='title d-inline-flex p-4'>
-                                    Contact information
-                                </div>
-                                <div className='salutations text-left'>
-                                    <div className='flex-column form-inline w-100'>
-                                        <select onChange={this.onClickSelect}
-                                                className="drp1 w-100 custom-select my-1 mr-sm-2"
-                                                id="inlineFormCustomSelectPref">
-                                            <option value='1'>Mr.</option>
-                                            <option value='2'>Mrs/Miss</option>
-                                        </select>
-                                    </div>
-                                    <div className='flex-column'><input name="firstName" className='w-100' type="text"
-
-                                                                        placeholder={this.state.errFirstName}
-                                                                        value={this.state.firstName}
-                                                                        onChange={this.onChangeInput}/></div>
-                                    <div className='flex-column'><input name="lastName" className='w-100' type="text"
-                                                                        placeholder={this.state.errLastName}
-                                                                        value={this.state.lastName}
-                                                                        onChange={this.onChangeInput}/>
-                                    </div>
-                                    <div className='flex-column'><input name="email" className='w-100' type="email"
-                                                                        placeholder={this.state.errEmail}
-                                                                        value={this.state.email}
-                                                                        onChange={this.onChangeInput}/>
-                                    </div>
-                                    <div className='flex-column'><input name="password" className='w-100'
-                                                                        type="password"
-                                                                        placeholder={this.state.errPassword}
-                                                                        value={this.state.password}
-                                                                        onChange={this.onChangeInput}/>
-                                    </div>
-                                    <div className='flex-column'><input name="confirmPassword" className='w-100'
-                                                                        type="password"
-                                                                        placeholder={this.state.errConfirmPassword}
-                                                                        value={this.state.confirmPassword}
-                                                                        onChange={this.onChangeInput}
-                                    /></div>
-                                    <div className='flex-column'><input name='phoneNumber' className='w-100' type="text"
-                                                                        placeholder={this.state.errPhoneNumber}
-                                                                        value={this.state.phoneNumber}
-                                                                        onChange={this.onChangeInput}/></div>
-
-                                </div>
-                                <div className='check flex-column text-left small'>
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value=""
-                                               id="defaultCheck1"/>
-                                        <label className="form-check-label" htmlFor="defaultCheck1">
-                                            I have read
-                                        </label>
-                                    </div>
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value=""
-                                               id="defaultCheck2"/>
-                                        <label className="form-check-label" htmlFor="defaultCheck2">
-                                            I agree
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div className='flex-column'>
-                                    <button onClick={this.handleClick} className='btnRegister'>Register</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )
-            }
+            return (this.secondRender());
         }
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './styleHeader.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
+import logo from '../img/logo_col.svg';
 
 class Header extends React.Component{
 
