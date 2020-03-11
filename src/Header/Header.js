@@ -13,7 +13,7 @@ class Header extends React.Component{
                     <div className="logo col-sm-3">
                         <img className="logoImg" src="logo_white.svg" alt="logo"/>
                     </div>
-                    <div className="col">
+                    <div className="col-sm-9">
                         <nav className="navbar">
                             <a className="navbar-brand">Manager's Panel</a>
                             <form className="form-inline">

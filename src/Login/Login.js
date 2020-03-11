@@ -1,7 +1,6 @@
 import React from "react";
-import AllEvents from "../AllEvents";
+import AllEvents from "../AllEvent/AllEvents";
 import InfoBlock from "../InformationBlock/InfoBlock";
-import RegistrationForm from "../RegistrationForm/RegistrationForm";
 
 class Login extends React.Component {
 
@@ -92,8 +91,9 @@ class Login extends React.Component {
         //в allevents надо будет передать атрибут с информацией о пользователе, который залогинился
         return (
             <div className="container-fluid">
-                <div className={'row'}><InfoBlock className="col-sm-3"/>
-                    <AllEvents email={this.state.inputEmail} password={this.state.inputPassword} className="col-sm-9"/>
+                <div className={'row'}>
+                    <InfoBlock className="col-sm-3"/>
+                    <AllEvents email={this.state.inputEmail} password={this.state.inputPassword} className="col-sm"/>
                 </div>
 
             </div>
