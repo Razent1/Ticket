@@ -14,8 +14,8 @@ class LoginForm extends React.Component {
             firstRender: false,
             fieldsErrors: {},
             err: false, // if we catch errors, we will render our page with new error fields
-            errEmail: '',
-            errPassword: '',
+            errEmail: 'Email not entered',
+            errPassword: 'Password not entered',
             errMessage: ''
         }
         this.onChangeInput = this.onChangeInput.bind(this);
@@ -54,15 +54,18 @@ class LoginForm extends React.Component {
                     console.log(parseObj);
                     this.setState({errMessage: parseObj.message});
 
-                    throw new Error(JSON.stringify(json));
+                    //throw new Error(JSON.stringify(json));
+                } else if(response.ok){
+                    this.setState({err: false});
                 }
             } catch (error) {
                 console.error(error);
             }
         } else {
             this.setState({err: true});
+            this.setState({errMessage: 'Fields are empty'});
             this.setState({errEmail: 'Email not entered'});
-            this.setState({errPassword: "password not entered"});
+            this.setState({errPassword: "Password not entered"});
 
         }
 
@@ -77,7 +80,7 @@ class LoginForm extends React.Component {
     firstRender = () => {
         return (
             <div className='container w-100'>
-                <div className='regist flex-column'><u>LOGIN</u></div>
+                <div className='regist flex-column p-3'><u>LOGIN</u></div>
                 <div className='d-flex justify-content-center'>
                     <div className='flex-column w-50'>
                         <div className='salutations text-left'>
@@ -94,7 +97,7 @@ class LoginForm extends React.Component {
                                        onChange={this.onChangeInput}/>
                             </div>
                         </div>
-                        <div className='flex-column'>
+                        <div className='flex-column p-3'>
                             <button onClick={this.handleClick} className='btnRegister'>Login</button>
                         </div>
                     </div>
@@ -112,13 +115,12 @@ class LoginForm extends React.Component {
         if (this.state.err === true) { //рендер в случае наличия ошибок при вводе данных
             return (
                 <div className='container w-100'>
-                    <div className='regist flex-column'><u>LOGIN</u></div>
+                    <div className='regist flex-column p-3'><u>LOGIN</u></div>
                     <div className='d-flex justify-content-center'>
                         <div className='flex-column w-50'>
+                            <div className='error'>{this.state.errMessage}</div>
                             <div className='salutations text-left'>
                                 <div className='flex-column'>
-                                    <div><br/>{this.state.errMessage}</div>
-
                                     <input name="email" className='w-100' type="email"
                                            placeholder={this.state.errEmail}
                                            value={this.state.email}
@@ -132,7 +134,7 @@ class LoginForm extends React.Component {
                                            onChange={this.onChangeInput}/>
                                 </div>
                             </div>
-                            <div className='flex-column'>
+                            <div className='flex-column p-3'>
                                 <button onClick={this.handleClick} className='btnRegister'>LOGIN</button>
                             </div>
                         </div>

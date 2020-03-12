@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import Header from "./Header/Header";
 import Login from "./Login/Login";
 import LoginForm from "./LoginForm/LoginForm";
+import RegistrationForm from "./RegistrationForm/RegistrationForm";
 
 
 class App extends React.Component {
@@ -18,18 +19,21 @@ class App extends React.Component {
                 <div>
                     {/*<Main/>*/}
                     {/*<Login/>*/}
-                    {/*<RegistrationForm/>*/}
-                    <LoginForm/>
+
+                    {/*<LoginForm/>*/}
                 </div>
             )
         } else {
             return (
                 <div>
-                    {/*тут будет другой хэдэр*/}
                     <Header/>
-                    <div className='login d-flex p-5'>
-                        <Login/>
-                    </div>
+                    <LoginForm/>
+                    {/*тут будет другой хэдэр*/}
+                    {/*<RegistrationForm/>*/}
+                    {/*<Header/>*/}
+                    {/*<div className='login d-flex p-5'>*/}
+                    {/*    <Login/>*/}
+                    {/*</div>*/}
                 </div>
             )
         }

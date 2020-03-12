@@ -43,3 +43,7 @@ input {
     background-color: whitesmoke;
     border: whitesmoke;
 }
+
+.error{
+    color: orangered;
+}

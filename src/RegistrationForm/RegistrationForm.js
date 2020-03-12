@@ -5,7 +5,6 @@ import {API_KEY_USER} from "../tools/Сonstants";
 
 class RegistrationForm extends React.Component {
 
-
     constructor(props) {
         super(props);
         this.state = {
@@ -42,7 +41,6 @@ class RegistrationForm extends React.Component {
             "phoneNumber": this.state.phoneNumber
         }
 
-
         if (this.state.password === this.state.confirmPassword) { // password validation
             try {
                 const response = await fetch(API_KEY_USER, {
@@ -63,7 +61,8 @@ class RegistrationForm extends React.Component {
                     // о том, где конкретно пользователь ввел неправильно данные
                     parseObj = JSON.parse(JSON.stringify(json));
                     console.log(parseObj); //convert json st
-                    throw new Error(JSON.stringify(json));
+                } else if (response.ok){
+                    this.setState({err: false});
                 }
             } catch (error) {
                 console.error(error);
@@ -75,15 +74,19 @@ class RegistrationForm extends React.Component {
             this.setState({errEmail: 'Email'});
             this.setState({errPassword: "Passwords don't match"});
             this.setState({errPhoneNumber: 'Phone Number'});
-            this.setState({errConfirmPassword: "Passwords don't match"});
+            //this.setState({errConfirmPassword: "Passwords don't match"});
+            this.setState({errConfirmPassword: 'Confirm Password'});
         }
-        this.setState({errConfirmPassword: 'Confirm Password'});
+
 
         if (parseObj != null) {
             await this.setState({fieldsErrors: parseObj});
             await this.errorsOnScreen();
         }
-        await this.setState({firstRender: true});
+        this.setState({firstRender: true});
+            //  if(this.state.err === false){
+            //
+            // }
     }
 
     onChangeInput = (event) => {
@@ -278,7 +281,6 @@ class RegistrationForm extends React.Component {
             )
         }
     }
-
 
     render() {
         if (this.state.firstRender === false) {
