@@ -1,6 +1,12 @@
+
+.login {
+    margin-top: 10em;
+}
+
 body {
     background-color: #07ace8;
     margin: 0 auto;
+    height: 100%;
 }
 
 img {

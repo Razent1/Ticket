@@ -8,9 +8,9 @@ class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            checkLogin: true,
+            checkLogin: false,
             checkEmail: false,
-            checkPassword: true,
+            checkPassword: false,
             inputEmail: '',
             inputPassword: ''
         };
@@ -59,7 +59,6 @@ class Login extends React.Component {
                 <form onSubmit={this.getAdminInformation}>
                     <div className="form-group row justify-content-center">
                         <div className="col-sm-3">
-
                             <input type="email" className="form-control"
                                    id="inputEmail" placeholder="Email"
                                    value={this.state.inputEmail}

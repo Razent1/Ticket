@@ -15,7 +15,6 @@ class App extends React.Component {
 
         if (this.props.checkLogin) {
             return (
-
                 <div>
                     {/*<Main/>*/}
                     {/*<Login/>*/}
@@ -23,14 +22,16 @@ class App extends React.Component {
                     <LoginForm/>
                 </div>
             )
-        } else{
-                return (
-                    <div>
-                        {/*тут будет другой хэдэр*/}
-                        <Header/>
+        } else {
+            return (
+                <div>
+                    {/*тут будет другой хэдэр*/}
+                    <Header/>
+                    <div className='login d-flex p-5'>
                         <Login/>
                     </div>
-                )
+                </div>
+            )
         }
 
     }

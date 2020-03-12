@@ -6,20 +6,6 @@ class AllEvents extends React.Component {
     render() {
         return (
             <div>
-                    {/*<div className="col">*/}
-                    {/*    /!*<div className="row">*!/*/}
-                    {/*    /!*    <div className="col-sm-3">*!/*/}
-                    {/*    /!*    </div>*!/*/}
-                    {/*    /!*    <div className="col-sm-9">*!/*/}
-                    {/*    /!*        <div className="row">*!/*/}
-                    {/*    /!*            <div className="col-sm-7">f</div>*!/*/}
-                    {/*    /!*            <div className="col-sm">Date</div>*!/*/}
-                    {/*    /!*            <div className="col-sm-align-self-end">Hall</div>*!/*/}
-                    {/*    /!*        </div>*!/*/}
-                    {/*    /!*    </div>*!/*/}
-                    {/*    /!*</div>*!/*/}
-
-                    {/*</div>*/}
                     <div className="col-sm-12">
                         <div className="d-flex w-100">
                             {/*<div className="col-sm-3">*/}
