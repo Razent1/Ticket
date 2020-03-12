@@ -2,20 +2,9 @@
     border: 1px solid gray;
 }
 
-html{
-    background-color: #3575b8;
-    margin: 0;
-}
-
 .logoImg{
     max-width: 100%;
     max-height: 100%;
-}
-
-body {
-    margin-left: 5em;
-    margin-right: 5em;
-    background-color: #f3f4f4;
 }
 
 .mainArray{
@@ -28,7 +17,6 @@ body {
     height: 7em;
     background: -webkit-linear-gradient(left, #3575b8, #ff1632);
 }
-
 
 .date2 > p {
     margin: 0;

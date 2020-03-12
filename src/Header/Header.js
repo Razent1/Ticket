@@ -7,7 +7,6 @@ class Header extends React.Component{
 
     render() {
         return(
-
             <header className="mainArray container-fluid">
                 <div className="row">
                     <div className="logo col-sm-3">
@@ -26,15 +25,11 @@ class Header extends React.Component{
                                 <button className='addEvent'>Add event</button>
                                 <button className='eventList'>Event list</button>
                         </div>
-
                     </div>
                 </div>
-
             </header>
-
         )
     }
-
 }
 
 export default Header;

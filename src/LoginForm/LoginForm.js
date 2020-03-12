@@ -2,6 +2,7 @@ import React from "react";
 import './LoginFormCss.css';
 import '../tools/Сonstants';
 import {API_KEY_LOGIN} from "../tools/Сonstants";
+import Main from "../Main/Main";
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -79,7 +80,7 @@ class LoginForm extends React.Component {
 
     firstRender = () => {
         return (
-            <div className='container w-100'>
+            <div className='container w-50 '>
                 <div className='regist flex-column p-3'><u>LOGIN</u></div>
                 <div className='d-flex justify-content-center'>
                     <div className='flex-column w-50'>
@@ -108,13 +109,15 @@ class LoginForm extends React.Component {
     secondRender = () => {
         if (this.state.err === false) { // рендер в случае отсутсвия ошибок при вводе данных
             return (
-                <div>Congratulations! You are entered.
+                <div>
+                    {/*Congratulations! You are entered.*/}
+                    <Main checkLogin={true}/>
                 </div>
             )
         }
         if (this.state.err === true) { //рендер в случае наличия ошибок при вводе данных
             return (
-                <div className='container w-100'>
+                <div className='container w-50'>
                     <div className='regist flex-column p-3'><u>LOGIN</u></div>
                     <div className='d-flex justify-content-center'>
                         <div className='flex-column w-50'>

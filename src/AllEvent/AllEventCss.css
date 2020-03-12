@@ -3,16 +3,16 @@
     width: 840px;
 }
 
-html {
-    background-color: #3575b8;
-    margin: 0;
-}
+/*html {*/
+/*    background-color: #3575b8;*/
+/*    margin: 0;*/
+/*}*/
 
 body {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5em;
+    margin-right: 5em;
     background-color: #f3f4f4;
-    height: auto;
+    height: 100%;
 }
 
 .mainArray {

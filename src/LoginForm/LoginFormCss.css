@@ -1,4 +1,6 @@
-
+.container{
+    margin-top: 10em;
+}
 .salutations div {
     border-bottom-style: groove;
     color: #868685;
@@ -12,9 +14,10 @@
 }
 
 .btnRegister {
-    background-color: #868685;
+    background-color: #231f20;
     color: whitesmoke;
     width: 10em;
+    font-weight: bold;
 }
 
 .regist {

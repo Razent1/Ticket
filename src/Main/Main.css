@@ -1,8 +1,12 @@
 html{
+    background-color: #3575b8;
     height: 100%;
+
 }
 
 body{
     background-color: #f3f4f4;
     height: 100%;
+    justify-content: center;
 }
+
