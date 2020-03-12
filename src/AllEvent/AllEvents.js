@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import './AllEvent.css';
+import './AllEventCss.css';
 
 class AllEvents extends React.Component {
 
@@ -12,7 +12,9 @@ class AllEvents extends React.Component {
                         <div className="array col-sm-12">
                             <div className="row">
                                 <div className="concertPic">
-                                    <img className="concertJpg" src="2020-02-24%2021.04.53.jpg" alt="eventPic"/>
+                                    <img className="concertJpg" src="246220.png" alt="eventPic"/>
+                                    <img src="ev3.png" alt="event1"/>
+
                                 </div>
                                 <div className="col-sm">
                                     <div className="progress">

@@ -37,22 +37,39 @@ class InfoBlock extends React.Component {
                     </button>
                 </section>
 
-
                 <section style={{visibility: "hidden"}} className="form-event">
                     <form action="">
                         <section className="credentials-form-item">
-                            <div>
-                                <img src="../../public/ev1.png" alt="event"/>
+                            <div className='event'>
+
+                                <img src="ev1.png" alt="event1"/>
+                                <h6 className={'art'}><span>Beyonce in tour   </span></h6>
+                                <h6 className={'date'}><span>December 22   </span></h6>
+                                <h6 className={'time'}><span> 18:00  </span></h6>
+                                <h6 className={'right'}><span>  sold out</span></h6>
+
                             </div>
                         </section>
                         <section className="credentials-form-item">
-                            <div>
-                                <img src="../../public/img/ev2.png" alt="event"/>
+                            <div className='event'>
+
+                                <img src="ev2.png" alt="event1"/>
+                                <h6 className={'art'}><span>Lady Gaga in tour   </span></h6>
+                                <h6 className={'date'}><span>December 22   </span></h6>
+                                <h6 className={'time'}><span> 18:00  </span></h6>
+                                <h6 className={'right'}><span>  sold out</span></h6>
+
                             </div>
                         </section>
                         <section className="credentials-form-item">
-                            <div>
-                                <img src="../../public/img/ev3.png" alt="event"/>
+                            <div className='event'>
+
+                                <img src="ev3.png" alt="event1"/>
+                                <span className={'art'}>Til Schweiger in tour   </span>
+                                <span className={'date'}>December 22   </span>
+                                <span className={'time'}> 18:00  </span>
+                                <span className={'right'}>  sold out</span>
+
                             </div>
                         </section>
                         <section className="credentials-form-item">
