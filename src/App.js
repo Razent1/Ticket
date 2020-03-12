@@ -4,10 +4,9 @@ import './Login/styleLogin.css';
 import './Header/styleHeader.css';
 import './Main/Main.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
-
 import Header from "./Header/Header";
-import Main from "./Main/Main";
 import Login from "./Login/Login";
+import LoginForm from "./LoginForm/LoginForm";
 
 
 class App extends React.Component {
@@ -18,9 +17,10 @@ class App extends React.Component {
             return (
 
                 <div>
-                    <Main/>
+                    {/*<Main/>*/}
                     {/*<Login/>*/}
                     {/*<RegistrationForm/>*/}
+                    <LoginForm/>
                 </div>
             )
         } else{

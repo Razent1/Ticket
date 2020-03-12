@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e02ef90a-164d-4dd9-b00d-13ac9a78ac0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/LoginForm/LoginForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LoginForm/LoginFormCss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AllEvent/AllEvent.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AllEvent/AllEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AllEvent/AllEvents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InformationBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/InformationBlock/InfoBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InformationBlock/InfoBlockCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/InformationBlock/InfoBlockCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/Сonstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/Сonstants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -53,6 +54,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -113,6 +115,7 @@
       <workItem from="1583911016479" duration="3155000" />
       <workItem from="1583918558257" duration="2878000" />
       <workItem from="1583923522709" duration="5596000" />
+      <workItem from="1584033861880" duration="6471000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <created>1582715480540</created>
@@ -170,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583742397584</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1584009439772</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1584009439772</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,25 +228,29 @@
     <MESSAGE value="newsave" />
     <MESSAGE value="RegistrationForm" />
     <MESSAGE value="RegistrationForm // inputs and disign" />
-    <option name="LAST_COMMIT_MESSAGE" value="RegistrationForm // inputs and disign" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="96" key="#Deployment" timestamp="1582721212952">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="281" y="96" key="#Deployment/0.0.1440.900@0.0.1440.900" timestamp="1582721212952" />
-    <state x="275" y="25" key="#ESLint" timestamp="1583924194552">
+    <state x="275" y="25" key="#ESLint" timestamp="1584013317920">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="25" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1583924194552" />
-    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583312234526">
+    <state x="275" y="25" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1584013317920" />
+    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584013395884">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583312234526" />
-    <state x="321" y="0" width="941" height="795" key="CommitChangelistDialog2" timestamp="1584009341732">
+    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584013395884" />
+    <state x="321" y="0" width="941" height="795" key="CommitChangelistDialog2" timestamp="1584009438725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584009341732" />
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584009438725" />
     <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1583011048310" />
     <state x="314" y="76" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1582719817002" />
     <state x="137" y="65" width="1092" height="611" key="DiffContextDialog" timestamp="1583919065848">
@@ -248,51 +262,51 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="529" y="373" key="Github.CreateGistDialog/0.0.1440.900@0.0.1440.900" timestamp="1582720660436" />
-    <state x="546" y="280" key="Github.Dialog.Accounts.Choose" timestamp="1583742913293">
+    <state x="546" y="280" key="Github.Dialog.Accounts.Choose" timestamp="1584009493347">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="546" y="280" key="Github.Dialog.Accounts.Choose/0.0.1366.728@0.0.1366.728" timestamp="1583742913293" />
+    <state x="546" y="280" key="Github.Dialog.Accounts.Choose/0.0.1366.728@0.0.1366.728" timestamp="1584009493347" />
     <state x="305" y="239" width="580" height="347" key="Github.ShareDialog" timestamp="1582720546287">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="305" y="239" width="580" height="347" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1582720546287" />
-    <state width="1345" height="186" key="GridCell.Tab.0.bottom" timestamp="1584009332335">
+    <state width="1345" height="186" key="GridCell.Tab.0.bottom" timestamp="1584033896453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584009332335" />
+    <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584033896453" />
     <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583012781047" />
     <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583012664234" />
-    <state width="1345" height="186" key="GridCell.Tab.0.center" timestamp="1584009332335">
+    <state width="1345" height="186" key="GridCell.Tab.0.center" timestamp="1584033896453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584009332335" />
+    <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584033896453" />
     <state width="1419" height="319" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583012781046" />
     <state width="1419" height="319" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1583012664234" />
-    <state width="1345" height="186" key="GridCell.Tab.0.left" timestamp="1584009332335">
+    <state width="1345" height="186" key="GridCell.Tab.0.left" timestamp="1584033896453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584009332335" />
+    <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584033896453" />
     <state width="1419" height="319" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583012781045" />
     <state width="1419" height="319" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1583012664233" />
-    <state width="1345" height="186" key="GridCell.Tab.0.right" timestamp="1584009332335">
+    <state width="1345" height="186" key="GridCell.Tab.0.right" timestamp="1584033896453">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584009332335" />
+    <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584033896453" />
     <state width="1419" height="319" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583012781046" />
     <state width="1419" height="319" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1583012664234" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1582710372660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1582710372660" />
-    <state x="304" y="154" key="Vcs.Push.Dialog.v2" timestamp="1583742907739">
+    <state x="304" y="154" key="Vcs.Push.Dialog.v2" timestamp="1584009488996">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="304" y="154" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583742907739" />
+    <state x="304" y="154" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584009488996" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1582811478816" />
-    <state x="483" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583911023460">
+    <state x="483" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584011940394">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="483" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1583911023460" />
+    <state x="483" y="303" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584011940394" />
     <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1583012579444" />
     <state x="419" y="248" key="git4idea.merge.GitPullDialog" timestamp="1583012597186">
       <screen x="0" y="0" width="1440" height="900" />

@@ -7,13 +7,13 @@ class AllEvents extends React.Component {
     render() {
         return (
             <div>
+
                 <section className="container-fluid">
                     <div className="col">
-                        <div className="array col-sm-12">
+                        <div className="array col-sm">
                             <div className="row">
                                 <div className="concertPic">
                                     <img className="concertJpg" src="246220.png" alt="eventPic"/>
-                                    <img src="ev3.png" alt="event1"/>
 
                                 </div>
                                 <div className="col-sm">
@@ -40,6 +40,7 @@ class AllEvents extends React.Component {
 
                     </div>
                 </section>
+
             </div>
         )
     }
