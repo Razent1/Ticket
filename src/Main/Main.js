@@ -5,6 +5,7 @@ import './Main.css'
 import '../Header/styleHeader.css'
 import Header from "../Header/Header";
 import LoginForm from "../LoginForm/LoginForm";
+import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 
 class Main extends React.Component {
 
@@ -22,10 +23,13 @@ class Main extends React.Component {
             )
         } else {
             return (
-                <div>
-                    <Header/>
-                    <LoginForm/>
-                </div>
+                <Router>
+                    <div>
+                        <Header/>
+                        {/*<LoginForm/>*/}
+                        <Route path='/login' component={LoginForm}/>
+                    </div>
+                </Router>
             )
         }
     }

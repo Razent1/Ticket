@@ -3,6 +3,9 @@ import './LoginFormCss.css';
 import '../tools/Сonstants';
 import {API_KEY_LOGIN} from "../tools/Сonstants";
 import Main from "../Main/Main";
+import {Link} from "react-router-dom";
+import {Route, Router} from "react-router";
+import App from "../App";
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -49,15 +52,17 @@ class LoginForm extends React.Component {
 
                 const json = await response.json();
                 parseObj = JSON.parse(JSON.stringify(json));
+                await console.log(parseObj);
                 if (!(response.ok)) {
                     this.setState({err: true});
                     parseObj = JSON.parse(JSON.stringify(json));//convert json st
                     console.log(parseObj);
                     this.setState({errMessage: parseObj.message});
-
-                    //throw new Error(JSON.stringify(json));
-                } else if(response.ok){
+                } else if (response.ok && parseObj.roles[1]) { //проверяем на наличие модератских прав
                     this.setState({err: false});
+                } else if (response.ok && parseObj.roles[0] === "ROLE_USER") {
+                    this.setState({err: true});
+                    this.setState({errMessage: "Only moderator can log-in from this page"});
                 }
             } catch (error) {
                 console.error(error);
@@ -109,10 +114,10 @@ class LoginForm extends React.Component {
     secondRender = () => {
         if (this.state.err === false) { // рендер в случае отсутсвия ошибок при вводе данных
             return (
-                <div>
-                    {/*Congratulations! You are entered.*/}
-                    <Main checkLogin={true}/>
-                </div>
+                    <div>
+                        {/*Congratulations! You are entered.*/}
+                            <App checkLogin={true}/>
+                    </div>
             )
         }
         if (this.state.err === true) { //рендер в случае наличия ошибок при вводе данных
