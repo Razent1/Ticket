@@ -2,10 +2,12 @@ import React from "react";
 import './LoginFormCss.css';
 import '../tools/Сonstants';
 import {API_KEY_LOGIN} from "../tools/Сonstants";
-import Main from "../Main/Main";
-import {Link} from "react-router-dom";
-import {Route, Router} from "react-router";
 import App from "../App";
+import {createStore} from "redux";
+import {initialState, rootReducer} from "../reducers/loginInfo";
+
+
+//export const store = createStore(rootReducer, initialState);
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -20,7 +22,11 @@ class LoginForm extends React.Component {
             err: false, // if we catch errors, we will render our page with new error fields
             errEmail: 'Email not entered',
             errPassword: 'Password not entered',
-            errMessage: ''
+            errMessage: '',
+            currentUser: {
+                email: '',
+                token: ''
+            }
         }
         this.onChangeInput = this.onChangeInput.bind(this);
         this.handleClick = this.handleClick.bind(this);
@@ -59,6 +65,10 @@ class LoginForm extends React.Component {
                     console.log(parseObj);
                     this.setState({errMessage: parseObj.message});
                 } else if (response.ok && parseObj.roles[1]) { //проверяем на наличие модератских прав
+                    this.setState({currentUser: {
+                        email: this.state.email,
+                            token: parseObj.token
+                        }});
                     this.setState({err: false});
                 } else if (response.ok && parseObj.roles[0] === "ROLE_USER") {
                     this.setState({err: true});
@@ -113,10 +123,10 @@ class LoginForm extends React.Component {
     }
     secondRender = () => {
         if (this.state.err === false) { // рендер в случае отсутсвия ошибок при вводе данных
+            localStorage.setItem('email', this.state.currentUser.token);
             return (
                     <div>
-                        {/*Congratulations! You are entered.*/}
-                            <App checkLogin={true}/>
+                            <App checkLogin={true} token={this.state.currentUser.token} email='email'/>
                     </div>
             )
         }
@@ -155,8 +165,8 @@ class LoginForm extends React.Component {
 
     render() {
         if (this.state.firstRender === false) {
+            // console.log(localStorage);
             return this.firstRender();
-
         }
         if (this.state.firstRender === true) { //рендер после отправки формы регистрации
             return this.secondRender();

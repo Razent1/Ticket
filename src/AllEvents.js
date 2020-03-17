@@ -1,5 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
+import {connect} from "react-redux";
+
 
 class AllEvents extends React.Component {
 
@@ -45,5 +47,12 @@ class AllEvents extends React.Component {
     }
 
 }
+
+// const mapStateToProps = store => {
+//     console.log(store) // посмотрим, что же у нас в store?
+//     return {
+//         user: store.email
+//     }
+// }
 
 export default AllEvents;

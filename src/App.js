@@ -5,45 +5,49 @@ import './App.css';
 import './Main/Main.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import Header from "./Header/Header";
-import Login from "./Login/Login";
 import LoginForm from "./LoginForm/LoginForm";
-import RegistrationForm from "./RegistrationForm/RegistrationForm";
-import Main from "./Main/Main";
 import {Redirect} from 'react-router';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import AllEvents from "./AllEvents";
-
+import Cal from "./Calendar/Calendar";
 
 class App extends React.Component {
 
     render() {
-        if (this.props.checkLogin) {
+        console.log(localStorage);
+        if (this.props.checkLogin || localStorage.getItem('email')) {
             return (
                 <Router>
+                    <Redirect to='/events'/>
+                    <Header token={this.props.token} emaal={this.props.email}/>
                     <div className='d-flex row'>
                         <div className='col-sm-3'>
-                            col
+                            <Cal/>
                         </div>
                         <div className='col-sm-9'>
-                            <Redirect to='/events' from='/login'/>
-                            <Route path='/events' component={AllEvents}/>
-                            {/*<AllEvents className='col-sm-9'/>*/}
+                            {/*<Provider store={store}>*/}
+                                <AllEvents token={this.props.token} emaal={this.props.email}/>
+                            {/*</Provider>*/}
+
                         </div>
                     </div>
                 </Router>
             )
         } else {
             return (
+
                 <Router>
                     <div>
-                        <Header/>
                         <Redirect to='/login'/>
                         <Route path="/login" exact component={LoginForm}/>
                     </div>
                 </Router>
+
             )
         }
     }
 }
+
+
 
 export default App;
