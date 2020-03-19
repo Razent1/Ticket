@@ -6,7 +6,6 @@ import App from "../App";
 import {createStore} from "redux";
 import {initialState, rootReducer} from "../reducers/loginInfo";
 
-
 //export const store = createStore(rootReducer, initialState);
 
 class LoginForm extends React.Component {
@@ -43,7 +42,6 @@ class LoginForm extends React.Component {
             "email": this.state.email,
             "password": this.state.password,
         }
-
 
         if (this.state.password.length > 0 && this.state.email.length > 0) {
             try {
