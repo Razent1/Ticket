@@ -3,8 +3,7 @@ import './LoginFormCss.css';
 import '../tools/Сonstants';
 import {API_KEY_LOGIN} from "../tools/Сonstants";
 import App from "../App";
-import {createStore} from "redux";
-import {initialState, rootReducer} from "../reducers/loginInfo";
+import LoginHeader from "../Header/LoginHeader";
 
 //export const store = createStore(rootReducer, initialState);
 
@@ -63,10 +62,12 @@ class LoginForm extends React.Component {
                     console.log(parseObj);
                     this.setState({errMessage: parseObj.message});
                 } else if (response.ok && parseObj.roles[1]) { //проверяем на наличие модератских прав
-                    this.setState({currentUser: {
-                        email: this.state.email,
+                    this.setState({
+                        currentUser: {
+                            email: this.state.email,
                             token: parseObj.token
-                        }});
+                        }
+                    });
                     this.setState({err: false});
                 } else if (response.ok && parseObj.roles[0] === "ROLE_USER") {
                     this.setState({err: true});
@@ -93,26 +94,29 @@ class LoginForm extends React.Component {
 
     firstRender = () => {
         return (
-            <div className='container w-50 '>
-                <div className='regist flex-column p-3'><u>LOGIN</u></div>
-                <div className='d-flex justify-content-center'>
-                    <div className='flex-column w-50'>
-                        <div className='salutations text-left'>
-                            <div className='flex-column'>
-                                <input autoFocus name="email" className='w-100' type="email"
-                                       placeholder='Email'
-                                       value={this.state.email}
-                                       onChange={this.onChangeInput}/>
+            <div>
+                <LoginHeader/>
+                <div className='container w-50 '>
+                    <div className='regist flex-column p-3'><u>LOGIN</u></div>
+                    <div className='d-flex justify-content-center'>
+                        <div className='flex-column w-50'>
+                            <div className='salutations text-left'>
+                                <div className='flex-column'>
+                                    <input autoFocus name="email" className='w-100' type="email"
+                                           placeholder='Email'
+                                           value={this.state.email}
+                                           onChange={this.onChangeInput}/>
+                                </div>
+                                <div className='flex-column'>
+                                    <input name="password" className='w-100' type="password"
+                                           placeholder='Password'
+                                           value={this.state.password}
+                                           onChange={this.onChangeInput}/>
+                                </div>
                             </div>
-                            <div className='flex-column'>
-                                <input name="password" className='w-100' type="password"
-                                       placeholder='Password'
-                                       value={this.state.password}
-                                       onChange={this.onChangeInput}/>
+                            <div className='flex-column p-3'>
+                                <button onClick={this.handleClick} className='btnRegister'>Login</button>
                             </div>
-                        </div>
-                        <div className='flex-column p-3'>
-                            <button onClick={this.handleClick} className='btnRegister'>Login</button>
                         </div>
                     </div>
                 </div>
@@ -123,35 +127,38 @@ class LoginForm extends React.Component {
         if (this.state.err === false) { // рендер в случае отсутсвия ошибок при вводе данных
             localStorage.setItem('email', this.state.currentUser.token);
             return (
-                    <div>
-                            <App checkLogin={true} token={this.state.currentUser.token} email='email'/>
-                    </div>
+                <div>
+                    <App checkLogin={true} token={this.state.currentUser.token} email='email'/>
+                </div>
             )
         }
         if (this.state.err === true) { //рендер в случае наличия ошибок при вводе данных
             return (
-                <div className='container w-50'>
-                    <div className='regist flex-column p-3'><u>LOGIN</u></div>
-                    <div className='d-flex justify-content-center'>
-                        <div className='flex-column w-50'>
-                            <div className='error'>{this.state.errMessage}</div>
-                            <div className='salutations text-left'>
-                                <div className='flex-column'>
-                                    <input name="email" className='w-100' type="email"
-                                           placeholder={this.state.errEmail}
-                                           value={this.state.email}
-                                           onChange={this.onChangeInput}/>
+                <div>
+                    <LoginHeader/>
+                    <div className='container w-50'>
+                        <div className='regist flex-column p-3'><u>LOGIN</u></div>
+                        <div className='d-flex justify-content-center'>
+                            <div className='flex-column w-50'>
+                                <div className='error'>{this.state.errMessage}</div>
+                                <div className='salutations text-left'>
+                                    <div className='flex-column'>
+                                        <input name="email" className='w-100' type="email"
+                                               placeholder={this.state.errEmail}
+                                               value={this.state.email}
+                                               onChange={this.onChangeInput}/>
+                                    </div>
+                                    <div className='flex-column'>
+                                        <input name="password" className='w-100'
+                                               type="password"
+                                               placeholder={this.state.errPassword}
+                                               value={this.state.password}
+                                               onChange={this.onChangeInput}/>
+                                    </div>
                                 </div>
-                                <div className='flex-column'>
-                                    <input name="password" className='w-100'
-                                           type="password"
-                                           placeholder={this.state.errPassword}
-                                           value={this.state.password}
-                                           onChange={this.onChangeInput}/>
+                                <div className='flex-column p-3'>
+                                    <button onClick={this.handleClick} className='btnRegister'>LOGIN</button>
                                 </div>
-                            </div>
-                            <div className='flex-column p-3'>
-                                <button onClick={this.handleClick} className='btnRegister'>LOGIN</button>
                             </div>
                         </div>
                     </div>

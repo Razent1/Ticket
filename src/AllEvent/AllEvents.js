@@ -7,7 +7,6 @@ class AllEvents extends React.Component {
     render() {
         return (
             <div>
-
                 <section className="container-fluid">
                     <div className="col">
                         <div className="array col-sm">
