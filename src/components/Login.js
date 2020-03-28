@@ -1,6 +1,6 @@
 import React from "react";
-import AllEvents from "../AllEvent/AllEvents";
-import InfoBlock from "../InformationBlock/InfoBlock";
+import Event from "./Event";
+import InfoBlock from "./InfoBlock";
 import App from "../App";
 
 class Login extends React.Component {
@@ -96,7 +96,7 @@ class Login extends React.Component {
             // <div className="container-fluid">
             //     <div className={'row'}>
             //         <InfoBlock className="col-sm-3"/>
-            //         <AllEvents email={this.state.inputEmail} password={this.state.inputPassword} className="col-sm"/>
+            //         <Event email={this.state.inputEmail} password={this.state.inputPassword} className="col-sm"/>
             //     </div>
             //
             // </div>

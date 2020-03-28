@@ -11,13 +11,13 @@ class Cal extends React.Component {
 
     render() {
         return (
-
+            <div className='calendar'>
                 <Calendar onChange={this.onChange}
                           onClickDay={(value, event) => alert('Clicked day: ', value)}
                           value={this.state.date}
                           calendarType={'Hebrew'}
                           locale={"eng"}/>
-
+            </div>
         );
     }
 }

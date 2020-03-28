@@ -1,58 +1,133 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import {connect} from "react-redux";
+import {API_KEY_EVENTLISTBYDATE, API_KEY_LOGIN} from "./tools/Сonstants";
+import Event from "./components/Event";
 
 
 class AllEvents extends React.Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            events: {},
+            page: 1,
+            disabledBtn: true
+        }
+
+        this.numbers = [];
+        for (let i = 0; i < 4; i++) {
+            this.numbers[i] = i;
+        }
+
+        this.prevPageHandleClick = this.prevPageHandleClick.bind(this);
+        this.nextPageHandleClick = this.nextPageHandleClick.bind(this);
+    }
+
+
+    nextPageHandleClick = async () => { // T D
+        this.setState({page: this.state.page + 1});
+        this.setState({disabledBtn: false});
+
+        let parseObj;
+        const data = {
+            "dateFrom": 1,
+            "dateTo": 100000000000000000
+        }
+        try {
+            const response = await fetch(`https://ticketserviceapp.herokuapp.com/events/bydate/${this.state.page + 1}/4`, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    "accept": "*/*",
+                    "Content-Type": "application/json"
+                }
+            });
+
+            const json = await response.json();
+            parseObj = JSON.parse(JSON.stringify(json));
+            this.setState({events: parseObj});
+            await console.log(this.state.events);
+        } catch (e) {
+
+        }
+
+
+    }
+    prevPageHandleClick = () => {
+        const page = this.state.page;
+        if (page > 2) {
+            this.setState({page: page - 1});
+        }
+        if (page == 2) {
+            this.setState({disabledBtn: true});
+            this.setState({page: page - 1});
+        }
+    }
+
+
+    componentDidMount() {
+        const data = {
+            "dateFrom": 1,
+            "dateTo": 100000000000000000
+        }
+        fetch(`https://ticketserviceapp.herokuapp.com/events/bydate/1/4`, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                "accept": "*/*",
+                "Content-Type": "application/json"
+            }
+
+        })
+            .then(response => response.json())
+            .then(json => {
+                this.setState({events: JSON.parse(JSON.stringify(json))})
+            });
+    }
+
     render() {
-        return (
-            <div>
+        const events = this.state.events;
+        console.log(events);
+        //TO DO
+        if (events[0]) {
+            // let ev = events[2].eventStart;
+            // let date = new Date(ev);
+            // console.log(date);
+            return (
+                <div>
                     <div className="col-sm-12">
-                        <div className="d-flex w-100">
-                            {/*<div className="col-sm-3">*/}
-                            {/*    g*/}
-                            {/*</div>*/}
-                            <div className="array col">
-                                <div className="row">
-                                    <div className="concertPic col-sm">
-                                        <img className="concertJpg" src="../public/img/2020-02-24%2021.04.53.jpg" alt=""/>
-                                    </div>
-                                    <div className="col-sm">
-                                        <div className="progress">
-                                            <div className="progress-bar progress-bar-striped progress-bar-animated"
-                                                 role="progressbar"
-                                                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                 >75% sold
-                                                out
-                                            </div>
-                                        </div>
-                                        <h1>Lady Gaga</h1>
-                                        <p>Word Tour</p>
-                                    </div>
-                                    <div className=" date2 col-sm-2 align-self-start">
-                                        <p>2 January</p>
-                                        <p>Hall 2</p>
-                                        <p>18:00</p>
-                                    </div>
-                                    <div className="col-sm align-self-end">
-                                        <div className="row justify-content-end">img2</div>
-                                    </div>
+                        <div>
+                            {events.map((number, index) => <Event key={index}/>)}
+                        </div>
+                        <div className='row pages'>
+                            <div className='col-sm-4'>
+                                <div className='row'>
+                                    <button className='nextBtn' disabled={this.state.disabledBtn}
+                                            onClick={this.prevPageHandleClick}>Prev page
+                                    </button>
+                                </div>
+                            </div>
+                            <div className='col-sm-4 '>
+                                <div className='row justify-content-center'>
+                                    {this.state.page}
+                                </div>
+                            </div>
+                            <div className='col-sm-4'>
+                                <div className='row justify-content-end'>
+                                    <button className='nextBtn' onClick={this.nextPageHandleClick}>Next page</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-            </div>
-        )
+                </div>
+            )
+        } else {
+            return (<div></div>);
+        }
     }
 
 }
-
-// const mapStateToProps = store => {
-//     console.log(store) // посмотрим, что же у нас в store?
-//     return {
-//         user: store.email
-//     }
-// }
 
 export default AllEvents;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './styleHeader.css';
+import '../styles/styleHeader.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import logo from '../img/logo_white.svg';
 

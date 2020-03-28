@@ -1,13 +1,13 @@
 import React from "react";
-import InfoBlock from "../InformationBlock/InfoBlock";
+import InfoBlock from "./InfoBlock";
 import AllEvents from "../AllEvents";
-import './Main.css'
-import '../Header/styleHeader.css'
-import Header from "../Header/Header";
-import LoginForm from "../LoginForm/LoginForm";
+import '../styles/Main.css'
+import '../styles/styleHeader.css'
+import Header from "../components/Header";
+import LoginForm from "../components/LoginForm";
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import {Redirect} from "react-router";
-import LoginHeader from "../Header/LoginHeader";
+import LoginHeader from "../components/LoginHeader";
 
 class Main extends React.Component {
 
@@ -23,7 +23,7 @@ class Main extends React.Component {
                         </div>
                         <div className='col-sm-9'>
                             <Route path='/events' component={AllEvents}/>
-                            {/*<AllEvents className='col-sm-9'/>*/}
+                            {/*<Event className='col-sm-9'/>*/}
                         </div>
                     </div>
                 </Router>

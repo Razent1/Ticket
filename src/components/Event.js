@@ -1,21 +1,21 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import './AllEventCss.css';
+import '../styles/AllEventCss.css';
 
-class AllEvents extends React.Component {
+class Event extends React.Component {
 
     render() {
         return (
             <div>
-                <section className="container-fluid">
-                    <div className="col">
-                        <div className="array col-sm">
+                <div className="col-sm-12">
+                    <div className="row">
+                        <div className="array col">
                             <div className="row">
-                                <div className="concertPic">
-                                    <img className="concertJpg" src="246220.png" alt="eventPic"/>
-
+                                <div className="concertPic col-sm-3">
+                                    <img className="concertJpg" src="../public/img/2020-02-24%2021.04.53.jpg"
+                                         alt=""/>
                                 </div>
-                                <div className="col-sm">
+                                <div className="col-sm-4">
                                     <div className="progress">
                                         <div className="progress-bar progress-bar-striped progress-bar-animated"
                                              role="progressbar" style={{width: "75%"}}
@@ -26,24 +26,23 @@ class AllEvents extends React.Component {
                                     <h1>Lady Gaga</h1>
                                     <p>Word Tour</p>
                                 </div>
-                                <div className=" date2 col-sm align-self-start">
+                                <div className=" date2 col-sm-3 align-self-start">
                                     <p>2 January</p>
                                     <p>Hall 2</p>
                                     <p>18:00</p>
                                 </div>
-                                <div className="col-sm align-self-end">
-                                    <div className="row justify-content-end">img2</div>
+                                <div className="d-flex flex-column flex-fill align-items-end">
+                                    <div className="d-flex flex-row ">img2</div>
+                                    <div className='d-flex flex-row flex-fill align-items-end'>img</div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                </section>
-
+                </div>
             </div>
         )
     }
 
 }
 
-export default AllEvents;
+export default Event;

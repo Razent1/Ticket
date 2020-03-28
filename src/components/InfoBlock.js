@@ -1,5 +1,5 @@
 import React from 'react';
-import './InfoBlockCss.css';
+import '../styles/InfoBlockCss.css';
 import 'jquery';
 import 'bootstrap';
 import Cal from "../Calendar/Calendar";

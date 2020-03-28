@@ -14,3 +14,10 @@ html{
 .cal {
     margin-left: auto;
 }
+
+.pages {
+    margin-top: 3em;
+}
+.nextBtn {
+    border: 1px solid gray;
+}

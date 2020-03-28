@@ -1,5 +1,5 @@
 import React from "react";
-import './registrationStyle.css';
+import '../styles/registrationStyle.css';
 import '../tools/Сonstants';
 import {API_KEY_USER} from "../tools/Сonstants";
 
@@ -74,7 +74,7 @@ class RegistrationForm extends React.Component {
             this.setState({errEmail: 'Email'});
             this.setState({errPassword: "Passwords don't match"});
             this.setState({errPhoneNumber: 'Phone Number'});
-            //this.setState({errConfirmPassword: "Passwords don't match"});
+            this.setState({errConfirmPassword: "Passwords don't match"});
             this.setState({errConfirmPassword: 'Confirm Password'});
         }
 
