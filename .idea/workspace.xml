@@ -3,30 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="88388675-4c93-4539-a041-e7c28f07414c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AllEvent/AllEventCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/AllEventCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AllEvent/AllEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Event.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AllEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AllEvents.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calendar/Calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/LoginHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/styleHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styleHeader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InformationBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InformationBlock/InfoBlockCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/InfoBlockCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/styleLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styleLogin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginForm/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginForm/LoginFormCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/LoginFormCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegistrationForm/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegistrationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegistrationForm/registrationStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/registrationStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eventCard/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/Сonstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/Сonstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/AllEventCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/AllEventCss.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +134,7 @@
       <workItem from="1584532264052" duration="13686000" />
       <workItem from="1584882709264" duration="1110000" />
       <workItem from="1584917750366" duration="789000" />
-      <workItem from="1585149533222" duration="21985000" />
+      <workItem from="1585149533222" duration="36050000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <created>1582715480540</created>
@@ -253,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584654915221</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Event // work on events">
+      <created>1585432259809</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1585432259810</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +295,8 @@
     <MESSAGE value="App // Routing" />
     <MESSAGE value="App ginFrm// Strage" />
     <MESSAGE value="App // logout abd paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="App // logout abd paths" />
+    <MESSAGE value="Event // work on events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Event // work on events" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="96" key="#Deployment" timestamp="1582721212952">
@@ -327,11 +316,11 @@
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1583312234526" />
     <state x="435" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1585167034365" />
-    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2" timestamp="1584654914628">
+    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2" timestamp="1585432259398">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583742396303" />
-    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1584654914628" />
+    <state x="177" y="43" width="941" height="795" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585432259398" />
     <state x="314" y="76" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1582719817002" />
     <state x="137" y="65" width="1092" height="611" key="DiffContextDialog" timestamp="1583919065848">
       <screen x="0" y="0" width="1366" height="728" />
@@ -350,29 +339,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="305" y="239" width="580" height="347" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1582720546287" />
-    <state width="1419" height="125" key="GridCell.Tab.0.bottom" timestamp="1585432183617">
+    <state width="1419" height="125" key="GridCell.Tab.0.bottom" timestamp="1585558839291">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583923559672" />
-    <state width="1419" height="125" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585432183617" />
+    <state width="1419" height="125" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585558839291" />
     <state width="709" height="125" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584880771115" />
-    <state width="1419" height="125" key="GridCell.Tab.0.center" timestamp="1585432183616">
+    <state width="1419" height="125" key="GridCell.Tab.0.center" timestamp="1585558839287">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583923559672" />
-    <state width="1419" height="125" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585432183616" />
+    <state width="1419" height="125" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585558839287" />
     <state width="709" height="125" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584880771112" />
-    <state width="1419" height="125" key="GridCell.Tab.0.left" timestamp="1585432183615">
+    <state width="1419" height="125" key="GridCell.Tab.0.left" timestamp="1585558839285">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583923559672" />
-    <state width="1419" height="125" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585432183615" />
+    <state width="1419" height="125" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585558839284" />
     <state width="709" height="125" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584880771110" />
-    <state width="1419" height="125" key="GridCell.Tab.0.right" timestamp="1585432183617">
+    <state width="1419" height="125" key="GridCell.Tab.0.right" timestamp="1585558839288">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1345" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583923559672" />
-    <state width="1419" height="125" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585432183617" />
+    <state width="1419" height="125" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585558839288" />
     <state width="709" height="125" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584880771113" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1582710372660">
       <screen x="0" y="0" width="1440" height="900" />

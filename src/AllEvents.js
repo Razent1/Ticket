@@ -55,14 +55,33 @@ class AllEvents extends React.Component {
 
 
     }
-    prevPageHandleClick = () => {
+    prevPageHandleClick = async () => {
         const page = this.state.page;
-        if (page > 2) {
-            this.setState({page: page - 1});
+        this.setState({page: page - 1});
+
+        let parseObj;
+        const data = {
+            "dateFrom": 1,
+            "dateTo": 100000000000000000
         }
-        if (page == 2) {
+
+        try {
+            const response = await fetch(`https://ticketserviceapp.herokuapp.com/events/bydate/${this.state.page - 1}/4`, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    "accept": "*/*",
+                    "Content-Type": "application/json"
+                }
+            });
+            const json = await response.json();
+            parseObj = JSON.parse(JSON.stringify(json));
+            this.setState({events: parseObj});
+        } catch (e) {
+            console.log(e);
+        }
+        if (page == 2) { //деактивируем кнопку, если мы находимся на первой странице
             this.setState({disabledBtn: true});
-            this.setState({page: page - 1});
         }
     }
 
@@ -72,6 +91,7 @@ class AllEvents extends React.Component {
             "dateFrom": 1,
             "dateTo": 100000000000000000
         }
+
         fetch(`https://ticketserviceapp.herokuapp.com/events/bydate/1/4`, {
             method: 'POST',
             body: JSON.stringify(data),
@@ -89,8 +109,6 @@ class AllEvents extends React.Component {
 
     render() {
         const events = this.state.events;
-        console.log(events);
-        //TO DO
         if (events[0]) {
             // let ev = events[2].eventStart;
             // let date = new Date(ev);
@@ -99,7 +117,7 @@ class AllEvents extends React.Component {
                 <div>
                     <div className="col-sm-12">
                         <div>
-                            {events.map((number, index) => <Event key={index}/>)}
+                            {events.map((event, index) => <Event key={index} event={event}/>)}
                         </div>
                         <div className='row pages'>
                             <div className='col-sm-4'>
