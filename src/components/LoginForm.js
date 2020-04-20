@@ -131,7 +131,7 @@ class LoginForm extends React.Component {
         }
         if (this.state.err === true) { //рендер в случае наличия ошибок при вводе данных
             return (
-                <div className='container w-50'>
+                <div className='container lgn w-50'>
                     <div className='regist flex-column p-3'><u>LOGIN</u></div>
                     <div className='d-flex justify-content-center'>
                         <div className='flex-column w-50'>

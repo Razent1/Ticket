@@ -1,23 +1,95 @@
-body {
-    margin-left: 5em;
-    margin-right: 5em;
-    background-color: #f3f4f4;
-    height: auto;
+@font-face {
+    font-family: 'DINPro-Black';
+    src: url("./tools/fonts/DINPro-Black.otf");
+    font-weight: normal;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'DINPro-CondBold';
+    src: url("./tools/fonts/DINPro-CondBold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Light';
+    src: url("./tools/fonts/DINPro-Light.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro-Regular';
+    src: url("./tools/fonts/DINPro-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FUTURAFUTURIS';
+    src: url("./tools/fonts/FUTURAFUTURIS.OTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FUTURAFUTURIS-BOLD';
+    src: url("./tools/fonts/FUTURAFUTURIS-BOLD.OTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /*margin-left: 5em;*/
+    /*margin-right: 5em;*/
+    margin: 0 auto;
+    background-color: #f3f4f4;
+    box-sizing: border-box;
+    min-height: 100vh;
+    line-height: 1.6;
+    /*min-width: 1250px;*/
+    max-width: 1300px;
+}
+
+/*@media (max-width: 1200px) {*/
+/*    body {*/
+/*        max-width: 970px;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 992px) {*/
+/*    body {*/
+/*        max-width: 750px;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 767px) {*/
+/*    body {*/
+/*        max-width: none;*/
+/*    }*/
+/*}*/
 
 html{
     background-color: #3575b8;
-    height: 100%;
-
+    box-sizing: border-box;
+    min-height: 100vh;
 }
 
-.cal {
-    margin-left: auto;
-}
 
 .pages {
-    margin-top: 3em;
+    margin-top: 2em;
 }
 .nextBtn {
     border: 1px solid gray;
+}
+
+button {
+    background-color: #f3f4f4;
+    display: inline-block;
+}
+
+.cal{
+    margin-top: 5%;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1250px;
+}
+button:hover {
+    opacity: .75;
 }

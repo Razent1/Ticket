@@ -90,6 +90,16 @@ section .container-fluid {
     font-size: 60%;
 }
 
+.dateSort{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 4em;
+}
+
+.btnDate {
+    border: white;
+}
+
 
 /*.concertJpg {*/
 /*    max-width: 100%;*/

@@ -10,8 +10,8 @@ import {Redirect, Switch} from 'react-router';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import Cal from "./components/Calendar";
 import LoginHeader from "./components/LoginHeader";
-import AllEvents from "./AllEvents";
-
+import AllEvents from "./components/AllEvents";
+import NewEvent from "./NewEvent/NewEvent";
 
 
 class App extends React.Component {
@@ -21,18 +21,23 @@ class App extends React.Component {
             return (
                 <Router>
                     <Redirect to='/events'/>
-                    <Header/>
-                    <div className='row'>
-                        <div className='col-sm-3'>
-                            <Cal/>
-                        </div>
-                        <div className='col-sm-9'>
-                            <Switch>
-                                {/*/!*<Provider store={store}>*!/ тут надо будет прописать main*/}
-                                <Route path='/event_list'><AllEvents token={this.props.token} emaal={this.props.email}/></Route>
-                                {/*</Provider>*/}
-                            </Switch>
-
+                    <div className='header__wrapper'>
+                        <Header/>
+                    </div>
+                    <div className='main'>
+                        <div className='row'>
+                            <div className='cal col-sm-3 '>
+                                <div className='col'>
+                                    <Cal/>
+                                </div>
+                            </div>
+                            <div className='col-sm-9'>
+                                <Switch>
+                                    <Route path='/event_list'><AllEvents token={this.props.token}
+                                                                         emaal={this.props.email}/></Route>
+                                    <Route path='/create_event'> <NewEvent/></Route>
+                                </Switch>
+                            </div>
                         </div>
                     </div>
                 </Router>

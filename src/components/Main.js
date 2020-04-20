@@ -1,6 +1,6 @@
 import React from "react";
 import InfoBlock from "./InfoBlock";
-import AllEvents from "../AllEvents";
+import AllEvents from "./AllEvents";
 import '../styles/Main.css'
 import '../styles/styleHeader.css'
 import Header from "../components/Header";
@@ -10,9 +10,7 @@ import {Redirect} from "react-router";
 import LoginHeader from "../components/LoginHeader";
 
 class Main extends React.Component {
-
     render() {
-
         if (this.props.checkLogin) {
             return (
                 <Router>

@@ -1,0 +1,43 @@
+.box2 {
+    box-sizing: border-box;
+    margin-top: 4em;
+    border: 1px solid #231f20;
+}
+
+.radius {
+    margin-top: 2em;
+}
+
+.input__typename {
+    font-weight: bold;
+    border-bottom: 1px solid #231f20;
+}
+
+.input__artist {
+    opacity: .5;
+    font-weight: bold;
+    border-bottom: 1px solid #231f20;
+}
+
+.eventInfo {
+    text-align: right;
+    border-right: 1px solid #231f20;
+    margin-bottom: 1em;
+}
+
+.choseBlock {
+    text-align: left;
+}
+
+.eventType {
+  height: content-box;
+}
+
+.select__place {
+    background-color: whitesmoke;
+    border: whitesmoke;
+}
+
+/*select.drp1 {*/
+/*    background-image: url("");*/
+/*}*/

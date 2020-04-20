@@ -11,7 +11,7 @@ class Header extends React.Component {
 
     secondRender = () => {
         return (
-            <header className="mainArray container-fluid">
+            <header>
                 <div className="row">
                     <div className="logo col-sm-3">
                         <a href="/events"> <img className="logoImg w-100" src={logo} alt="logo"/></a>
@@ -24,7 +24,6 @@ class Header extends React.Component {
 
 
     render() {
-
         return this.secondRender();
     }
 }
